@@ -1,0 +1,96 @@
+[
+  {
+    "id": "urban-revitalization",
+    "title": "Downtown Urban Revitalization",
+    "category": "urban",
+    "categoryLabel": "Urban Design",
+    "description": "A comprehensive master plan to revitalize the downtown core, focusing on pedestrian-friendly streetscapes, public plazas, and mixed-use development to foster a vibrant community.",
+    "shortDescription": "Master plan for downtown revitalization and public spaces.",
+    "coverImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+    ],
+    "location": "Surat, Gujarat",
+    "year": 2024,
+    "area": "15 Acres",
+    "featured": true
+  },
+  {
+    "id": "modern-healthcare",
+    "title": "Riverside Healthcare Hub",
+    "category": "healthcare",
+    "categoryLabel": "Healthcare Architecture",
+    "description": "State-of-the-art healthcare facility designed with patient well-being in mind. Incorporates natural light, green spaces, and efficient patient flow systems.",
+    "shortDescription": "Patient-centric healthcare facility with green spaces.",
+    "coverImage": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=2073&auto=format&fit=crop"
+    ],
+    "location": "Ahmedabad",
+    "year": 2023,
+    "area": "120,000 sq ft"
+  },
+  {
+    "id": "eco-residential",
+    "title": "Eco-Living Residences",
+    "category": "buildings",
+    "categoryLabel": "Residential & Commercial",
+    "description": "Sustainable residential complex featuring passive cooling, solar integration, and community gardens, setting a new standard for urban living.",
+    "shortDescription": "Sustainable multi-family residential complex.",
+    "coverImage": "https://images.unsplash.com/photo-1460317442991-0ec209397118?q=80&w=2070&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "location": "Pune",
+    "year": 2023,
+    "area": "5 Acres",
+    "featured": true
+  },
+  {
+    "id": "commercial-plaza",
+    "title": "Tech Park Plaza",
+    "category": "buildings",
+    "categoryLabel": "Residential & Commercial",
+    "description": "A modern commercial development providing flexible workspaces, retail outlets, and expansive public areas that encourage collaboration and networking.",
+    "shortDescription": "Modern commercial development and tech park.",
+    "coverImage": "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2070&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2069&auto=format&fit=crop"
+    ],
+    "location": "Bengaluru",
+    "year": 2022,
+    "area": "250,000 sq ft"
+  },
+  {
+    "id": "regional-landuse",
+    "title": "Coastal Regional Plan",
+    "category": "landuse",
+    "categoryLabel": "Landuse Planning",
+    "description": "Strategic landuse framework for a growing coastal region, balancing economic development with environmental conservation and climate resilience.",
+    "shortDescription": "Strategic framework balancing development and conservation.",
+    "coverImage": "https://images.unsplash.com/photo-1473446171819-bf9567990c8b?q=80&w=2070&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "location": "Coastal Gujarat",
+    "year": 2021,
+    "area": "Regional",
+    "featured": true
+  },
+  {
+    "id": "gis-mapping-project",
+    "title": "Urban Transit GIS Mapping",
+    "category": "gis",
+    "categoryLabel": "GIS Analysis",
+    "description": "Comprehensive GIS spatial analysis to optimize proposed public transit routes and assess environmental and demographic impacts.",
+    "shortDescription": "Spatial analysis for optimizing public transit infrastructure.",
+    "coverImage": "https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=2074&auto=format&fit=crop",
+    "images": [
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+    ],
+    "location": "Mumbai",
+    "year": 2024,
+    "area": "City-wide"
+  }
+]

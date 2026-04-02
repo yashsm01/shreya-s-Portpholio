@@ -1,0 +1,149 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.footer {
+  background-color: $color-a;
+  color: $color-white;
+  position: relative;
+  
+  .footer-top {
+    height: 4px;
+    width: 100%;
+    background: linear-gradient(90deg, $color-e 0%, lighten($color-e, 20%) 100%);
+  }
+}
+
+.footer-content {
+  padding: 60px $container-padding-mobile;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  
+  @include media-up(lg) {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px $container-padding-desktop;
+  }
+}
+
+.footer-brand {
+  max-width: 400px;
+  
+  .logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    margin-bottom: 24px;
+    
+    .logo-circle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      border: 2px solid $color-white;
+      color: $color-white;
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 22px;
+    }
+    
+    .logo-text {
+      color: $color-white;
+      font-family: $font-heading;
+      font-weight: 600;
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+  }
+  
+  .brand-desc {
+    color: rgba($color-white, 0.7);
+    font-size: 16px;
+    line-height: 1.6;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  
+  @include media-up(md) {
+    gap: 80px;
+  }
+  
+  .link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+    h4 {
+      color: $color-white;
+      font-family: $font-body;
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    a {
+      color: rgba($color-white, 0.7);
+      transition: color 0.3s ease;
+      
+      &:hover {
+        color: $color-e;
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba($color-white, 0.1);
+  padding: 24px 0;
+  
+  .bottom-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    
+    @include media-up(md) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    p {
+      margin: 0;
+      color: rgba($color-white, 0.5);
+      font-size: 14px;
+    }
+  }
+}
+
+.social-links {
+  display: flex;
+  gap: 16px;
+  
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: rgba($color-white, 0.1);
+    color: $color-white;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    
+    &:hover {
+      background-color: $color-e;
+      transform: translateY(-2px);
+    }
+  }
+}

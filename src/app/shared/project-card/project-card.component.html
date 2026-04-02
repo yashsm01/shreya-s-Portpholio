@@ -1,0 +1,13 @@
+<div class="project-card" [routerLink]="['/projects', project.id]">
+  <div class="card-image-wrap">
+    <img [src]="project.coverImage" [alt]="project.title" class="card-image" loading="lazy">
+    <div class="card-overlay">
+      <div class="overlay-content">
+        <span class="category">{{ project.categoryLabel }}</span>
+        <h3>{{ project.title }}</h3>
+        <p *ngIf="project.shortDescription">{{ project.shortDescription }}</p>
+        <span class="btn-view">View Project</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,31 @@
+<div class="page-header bg-dark">
+  <div class="container">
+    <h1 class="page-title">Portfolio.</h1>
+    <div class="separator">
+      <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="#9bc631" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<section class="portfolio-section bg-light pt-60 pb-120">
+  <div class="container">
+    <app-filter-bar 
+      [activeFilter]="activeFilter" 
+      (filterChange)="onFilterChange($event)">
+    </app-filter-bar>
+    
+    <div class="project-grid mt-5">
+      <app-project-card 
+        *ngFor="let project of projects" 
+        [project]="project">
+      </app-project-card>
+      
+      <div *ngIf="projects.length === 0" class="no-results">
+        <p>No projects found for the selected category. Check back soon for updates.</p>
+        <button class="btn btn-outline dark" (click)="onFilterChange('all')">View All Projects</button>
+      </div>
+    </div>
+  </div>
+</section>

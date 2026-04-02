@@ -1,0 +1,37 @@
+<header class="navbar" [ngClass]="{'scrolled': isScrolled}">
+  <div class="container navbar-inner">
+    <div class="logo">
+      <a routerLink="/" (click)="closeMenu()">
+        <!-- Placeholder for logo. Following reference design, circle with text -->
+        <div class="logo-circle">SS</div>
+        <span class="logo-text">Shreya Surti</span>
+      </a>
+    </div>
+
+    <!-- Desktop Navigation -->
+    <nav class="nav-links desktop-menu">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
+      <a routerLink="/projects" routerLinkActive="active">Portfolio</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+    </nav>
+
+    <div class="nav-actions desktop-menu">
+      <a href="#contact" class="btn btn-primary btn-cta">Contact / Get a quote</a>
+    </div>
+
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+      <span class="hamburger" [ngClass]="{'open': isMenuOpen}"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Navigation Panel -->
+  <div class="mobile-menu-overlay" [ngClass]="{'open': isMenuOpen}">
+    <nav class="mobile-nav-links">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
+      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Portfolio</a>
+      <a href="#about" (click)="closeMenu()">About</a>
+      <a href="#contact" class="btn btn-primary mt-4" (click)="closeMenu()">Contact / Get a quote</a>
+    </nav>
+  </div>
+</header>

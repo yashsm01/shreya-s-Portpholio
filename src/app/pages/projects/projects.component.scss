@@ -1,0 +1,75 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.page-header {
+  padding-top: 160px;
+  padding-bottom: 80px;
+  
+  .page-title {
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: $color-white;
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .separator {
+    animation: scaleIn 0.8s ease 0.2s forwards;
+    opacity: 0;
+  }
+}
+
+.pt-60 { padding-top: 60px; }
+.pb-120 { padding-bottom: 120px; }
+.mt-5 { margin-top: 3rem; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  
+  @include media-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  @include media-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  background-color: rgba($color-c, 0.03);
+  border-radius: 8px;
+  
+  p {
+    font-size: 18px;
+    color: rgba($color-c, 0.6);
+    margin-bottom: 24px;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

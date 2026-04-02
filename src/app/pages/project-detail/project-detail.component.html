@@ -1,0 +1,86 @@
+<ng-container *ngIf="!isLoading && project">
+  <!-- Project Hero Banner -->
+  <section class="project-hero bg-dark">
+    <div class="hero-image" [style.background-image]="'url(' + project.coverImage + ')'"></div>
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <div class="category-tag">{{ project.categoryLabel }}</div>
+      <h1 class="project-title">{{ project.title }}</h1>
+    </div>
+  </section>
+
+  <!-- Project Info & Description -->
+  <section class="project-info-section pb-120">
+    <div class="container">
+      <div class="back-link-wrapper">
+        <a routerLink="/projects" class="back-link">&larr; Back to Portfolio</a>
+      </div>
+      
+      <div class="info-grid">
+        <div class="main-content">
+          <app-section-heading title="Project Overview" [centered]="false"></app-section-heading>
+          <div class="description-content">
+            <!-- In real app, might use innerHTML for rich text -->
+            <p>{{ project.description }}</p>
+            <p *ngIf="project.shortDescription" class="mt-4">
+              Our approach involved comprehensive engagement with the community and integrating modern design principles to ensure functionality and sustainability over the long term. This reflects our commitment to creating robust and dynamic environments.
+            </p>
+          </div>
+        </div>
+        
+        <div class="meta-sidebar">
+          <div class="meta-card">
+            <h3>Project Details</h3>
+            <ul class="meta-list">
+              <li *ngIf="project.location">
+                <span class="label">Location</span>
+                <span class="value">{{ project.location }}</span>
+              </li>
+              <li *ngIf="project.year">
+                <span class="label">Completion</span>
+                <span class="value">{{ project.year }}</span>
+              </li>
+              <li *ngIf="project.area">
+                <span class="label">Area</span>
+                <span class="value">{{ project.area }}</span>
+              </li>
+              <li *ngIf="project.client">
+                <span class="label">Client</span>
+                <span class="value">{{ project.client }}</span>
+              </li>
+              <li>
+                <span class="label">Expertise</span>
+                <span class="value">{{ project.categoryLabel }}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Gallery -->
+  <section class="gallery-section bg-light pb-120" *ngIf="project.images && project.images.length > 0">
+    <div class="container">
+      <app-section-heading title="Gallery" [centered]="true"></app-section-heading>
+      <div class="image-gallery">
+        <div class="gallery-item" *ngFor="let img of project.images">
+          <img [src]="img" [alt]="project.title + ' gallery image'" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <section class="bg-accent text-center" style="padding: 80px 0;">
+    <div class="container">
+      <h2 style="color: var(--color-c); margin-bottom: 24px; font-size: 36px;">Interested in a similar project?</h2>
+      <a href="#contact" class="btn btn-primary">Let's Talk</a>
+    </div>
+  </section>
+</ng-container>
+
+<!-- Loading State -->
+<div *ngIf="isLoading" class="loading-state">
+  <div class="spinner"></div>
+</div>

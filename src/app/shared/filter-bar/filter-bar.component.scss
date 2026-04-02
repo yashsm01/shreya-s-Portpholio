@@ -1,0 +1,60 @@
+@import '../../../scss/variables';
+
+.filter-wrapper {
+  margin-bottom: 40px;
+  border-bottom: 1px solid rgba($color-c, 0.1);
+  padding-bottom: 2px;
+}
+
+.filter-scroll {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  max-width: 100%;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: rgba($color-c, 0.6);
+  font-family: $font-body;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 12px 4px;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; // overlap border
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: $color-e;
+    transition: width 0.3s ease;
+  }
+  
+  &:hover {
+    color: $color-c;
+  }
+  
+  &.active {
+    color: $color-c;
+    font-weight: 600;
+    
+    &::after {
+      width: 100%;
+    }
+  }
+}

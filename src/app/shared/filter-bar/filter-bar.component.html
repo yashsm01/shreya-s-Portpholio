@@ -1,0 +1,12 @@
+<div class="filter-wrapper">
+  <div class="filter-scroll">
+    <ng-container *ngFor="let filter of filters">
+      <button 
+        class="filter-btn" 
+        [class.active]="activeFilter === filter.id"
+        (click)="setFilter(filter.id)">
+        {{ filter.label }}
+      </button>
+    </ng-container>
+  </div>
+</div>

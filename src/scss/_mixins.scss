@@ -1,0 +1,92 @@
+@import 'variables';
+
+// Responsive Breakpoints
+@mixin media-up($breakpoint) {
+  @if $breakpoint == sm {
+    @media (min-width: $breakpoint-sm) { @content; }
+  } @else if $breakpoint == md {
+    @media (min-width: $breakpoint-md) { @content; }
+  } @else if $breakpoint == lg {
+    @media (min-width: $breakpoint-lg) { @content; }
+  } @else if $breakpoint == xl {
+    @media (min-width: $breakpoint-xl) { @content; }
+  } @else if $breakpoint == xxl {
+    @media (min-width: $breakpoint-xxl) { @content; }
+  }
+}
+
+@mixin media-down($breakpoint) {
+  @if $breakpoint == sm {
+    @media (max-width: ($breakpoint-sm - 1px)) { @content; }
+  } @else if $breakpoint == md {
+    @media (max-width: ($breakpoint-md - 1px)) { @content; }
+  } @else if $breakpoint == lg {
+    @media (max-width: ($breakpoint-lg - 1px)) { @content; }
+  } @else if $breakpoint == xl {
+    @media (max-width: ($breakpoint-xl - 1px)) { @content; }
+  } @else if $breakpoint == xxl {
+    @media (max-width: ($breakpoint-xxl - 1px)) { @content; }
+  }
+}
+
+// Container setup
+@mixin container {
+  width: 100%;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $container-padding-mobile;
+  
+  @include media-up(md) {
+    padding: 0 $container-padding-desktop;
+  }
+}
+
+// Section padding
+@mixin section-padding {
+  padding: $section-padding-mobile 0;
+  
+  @include media-up(md) {
+    padding: $section-padding-desktop 0;
+  }
+}
+
+// Typography resets
+@mixin unstyled-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin unstyled-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  
+  &:focus {
+    outline: none;
+  }
+}
+
+// Visual effects
+@mixin glass-panel {
+  background: rgba($color-b, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba($color-white, 0.2);
+}
+
+@mixin glass-panel-dark {
+  background: rgba($color-a, 0.85);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba($color-white, 0.05);
+}
+
+// Transitions
+@mixin hover-transition {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
