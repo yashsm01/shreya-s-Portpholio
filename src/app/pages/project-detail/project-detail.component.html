@@ -64,7 +64,10 @@
     <div class="container">
       <app-section-heading title="Gallery" [centered]="true"></app-section-heading>
       <div class="image-gallery">
-        <div class="gallery-item" *ngFor="let img of project.images">
+        <div class="gallery-item" *ngFor="let img of project.images" (click)="openLightbox(img)">
+          <div class="zoom-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><line x1="11" y1="8" x2="11" y2="14"></line><line x1="8" y1="11" x2="14" y2="11"></line></svg>
+          </div>
           <img [src]="img" [alt]="project.title + ' gallery image'" loading="lazy">
         </div>
       </div>
@@ -83,4 +86,10 @@
 <!-- Loading State -->
 <div *ngIf="isLoading" class="loading-state">
   <div class="spinner"></div>
+</div>
+
+<!-- Lightbox / Zoom View -->
+<div class="lightbox" *ngIf="selectedImage" (click)="closeLightbox()">
+  <span class="lightbox-close" (click)="closeLightbox()">&times;</span>
+  <img [src]="selectedImage" alt="Zoomed view" (click)="$event.stopPropagation()">
 </div>

@@ -19,6 +19,7 @@ export class ProjectDetailComponent implements OnInit {
 
   project: Project | undefined;
   isLoading = true;
+  selectedImage: string | null = null;
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
@@ -43,5 +44,15 @@ export class ProjectDetailComponent implements OnInit {
       }
       this.isLoading = false;
     });
+  }
+
+  openLightbox(img: string) {
+    this.selectedImage = img;
+    document.body.style.overflow = 'hidden';
+  }
+
+  closeLightbox() {
+    this.selectedImage = null;
+    document.body.style.overflow = '';
   }
 }
