@@ -13,60 +13,57 @@
   border-bottom: 1px solid transparent;
 
   &.scrolled {
-    background-color: rgba($color-white, 0.92);
+    /* Slight Blue Background with Light Blue Accent Colors */
+    background-color: rgba(14, 33, 66, 0.95); /* A slight, sleek dark blue */
     padding: 15px 0;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba($color-c, 0.05);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(130, 195, 255, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 
-    // Deep styles for child elements when scrolled
+    /* Light Blue Font and Borders */
     .logo-circle {
-      border-color: $color-a;
-      color: $color-a;
+      border-color: #82c3ff;
+      color: #82c3ff;
       
       &:hover {
-        background-color: $color-e;
-        border-color: $color-e;
-        color: $color-white;
+        background-color: #82c3ff;
+        color: #0e2142;
       }
     }
 
     .logo-text {
-      color: $color-a;
+      color: #82c3ff;
     }
 
     .nav-links a {
-      color: $color-c;
+      color: #b0d8ff;
       font-weight: 500;
       
       &:hover, &.active {
-        color: $color-e;
+        color: #ffffff;
       }
     }
 
     .btn-cta {
-      border-color: $color-a;
-      color: $color-a;
+      border-color: #82c3ff;
+      color: #82c3ff;
+      background-color: transparent;
       
       &:hover {
-        background-color: $color-a;
-        color: $color-white !important;
+        background-color: #82c3ff;
+        color: #0e2142 !important;
       }
     }
 
     .hamburger {
-      background-color: $color-a;
+      background-color: #82c3ff;
       
       &::before, &::after {
-        background-color: $color-a;
+        background-color: #82c3ff;
       }
-      
       &.open {
         background-color: transparent;
-        &::before, &::after {
-          background-color: $color-white; // white when overlay is open (overlay is dark)
-        }
       }
     }
   }
@@ -106,6 +103,7 @@
     font-size: 18px;
     letter-spacing: 1px;
     display: none;
+    transition: color 0.3s ease;
     
     @include media-up(md) {
       display: block;
@@ -115,6 +113,7 @@
   &:hover .logo-circle {
     background-color: $color-e;
     border-color: $color-e;
+    color: $color-white;
   }
 }
 
@@ -136,6 +135,7 @@
     font-size: 16px;
     position: relative;
     padding-bottom: 5px;
+    transition: color 0.3s ease;
     
     &::after {
       content: '';
@@ -158,6 +158,8 @@
   .btn-cta {
     background-color: transparent;
     border: 2px solid $color-white;
+    color: $color-white;
+    transition: all 0.3s ease;
     
     &:hover {
       background-color: $color-white;
@@ -198,7 +200,7 @@
       width: 100%;
       height: 2px;
       background-color: $color-white;
-      transition: transform 0.3s ease, top 0.3s ease;
+      transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
     }
     
     &::before {
@@ -210,16 +212,18 @@
     }
     
     &.open {
-      background-color: transparent;
+      background-color: transparent !important;
       
       &::before {
         top: 0;
         transform: rotate(45deg);
+        background-color: $color-white !important; // Needs to be white because overlay is dark
       }
       
       &::after {
         top: 0;
         transform: rotate(-45deg);
+        background-color: $color-white !important; // Needs to be white because overlay is dark
       }
     }
   }
@@ -257,9 +261,12 @@
       font-family: $font-heading;
       font-size: 32px;
       font-weight: 500;
+      opacity: 0.8;
+      transition: opacity 0.3s ease, color 0.3s ease;
       
-      &.active {
+      &:hover, &.active {
         color: $color-e;
+        opacity: 1;
       }
     }
     
