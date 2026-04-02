@@ -13,54 +13,55 @@
   border-bottom: 1px solid transparent;
 
   &.scrolled {
-    /* Slight Blue Background with Light Blue Accent Colors */
-    background-color: rgba(14, 33, 66, 0.95); /* A slight, sleek dark blue */
+    /* Dark Glassmorphic Header */
+    background-color: rgba(#0f254a, 0.85); /* Dark Navy with transparency */
     padding: 15px 0;
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(130, 195, 255, 0.2);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
-    /* Light Blue Font and Borders */
+    /* Light Fonts and Borders */
     .logo-circle {
-      border-color: #82c3ff;
-      color: #82c3ff;
+      border-color: #ffffff;
+      color: #ffffff;
       
       &:hover {
-        background-color: #82c3ff;
-        color: #0e2142;
-      }
-    }
-
-    .logo-text {
-      color: #82c3ff;
-    }
-
-    .nav-links a {
-      color: #b0d8ff;
-      font-weight: 500;
-      
-      &:hover, &.active {
+        background-color: #996515; /* Gold */
+        border-color: #996515;
         color: #ffffff;
       }
     }
 
+    .logo-text {
+      color: #ffffff;
+    }
+
+    .nav-links a {
+      color: #ffffff;
+      font-weight: 500;
+      
+      &:hover, &.active {
+        color: #996515; /* Gold */
+      }
+    }
+
     .btn-cta {
-      border-color: #82c3ff;
-      color: #82c3ff;
+      border-color: #ffffff;
+      color: #ffffff;
       background-color: transparent;
       
       &:hover {
-        background-color: #82c3ff;
-        color: #0e2142 !important;
+        background-color: #ffffff;
+        color: #0f254a !important; /* Navy */
       }
     }
 
     .hamburger {
-      background-color: #82c3ff;
+      background-color: #ffffff;
       
       &::before, &::after {
-        background-color: #82c3ff;
+        background-color: #ffffff;
       }
       &.open {
         background-color: transparent;
