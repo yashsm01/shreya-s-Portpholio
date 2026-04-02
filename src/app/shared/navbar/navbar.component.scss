@@ -13,12 +13,62 @@
   border-bottom: 1px solid transparent;
 
   &.scrolled {
-    background-color: rgba($color-a, 0.95);
+    background-color: rgba($color-white, 0.92);
     padding: 15px 0;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba($color-white, 0.1);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba($color-c, 0.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+
+    // Deep styles for child elements when scrolled
+    .logo-circle {
+      border-color: $color-a;
+      color: $color-a;
+      
+      &:hover {
+        background-color: $color-e;
+        border-color: $color-e;
+        color: $color-white;
+      }
+    }
+
+    .logo-text {
+      color: $color-a;
+    }
+
+    .nav-links a {
+      color: $color-c;
+      font-weight: 500;
+      
+      &:hover, &.active {
+        color: $color-e;
+      }
+    }
+
+    .btn-cta {
+      border-color: $color-a;
+      color: $color-a;
+      
+      &:hover {
+        background-color: $color-a;
+        color: $color-white !important;
+      }
+    }
+
+    .hamburger {
+      background-color: $color-a;
+      
+      &::before, &::after {
+        background-color: $color-a;
+      }
+      
+      &.open {
+        background-color: transparent;
+        &::before, &::after {
+          background-color: $color-white; // white when overlay is open (overlay is dark)
+        }
+      }
+    }
   }
 }
 

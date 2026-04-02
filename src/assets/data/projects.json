@@ -1,5 +1,42 @@
 [
   {
+    "id": "living-with-water",
+    "title": "Living with Water: A Resilient Urban Framework",
+    "category": "urban",
+    "categoryLabel": "Urban Design",
+    "description": "The project addresses Surat’s flooding challenges by transforming low-lying areas into multifunctional landscapes that store runoff while providing parks and community spaces. Using bioswales, riparian buffers, and rainwater harvesting, it integrates ecological restoration and adaptive public programming to create a sustainable, flood-resilient urban environment.",
+    "shortDescription": "An adaptive Urban Water Management Plan.",
+    "coverImage": "assets/data/Project_2/Main Header.png",
+    "images": [
+      "assets/data/Project_2/P_2_image_1.png",
+      "assets/data/Project_2/P_2_image_2.png",
+      "assets/data/Project_2/P_2_image_3.png",
+      "assets/data/Project_2/P_2_image_4.png",
+      "assets/data/Project_2/P_2_image_5.png"
+    ],
+    "location": "Surat, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "surat-2035-urban-growth",
+    "title": "Surat 2035-Strategic Urban Growth Assessment",
+    "category": "urban",
+    "categoryLabel": "Urban Design",
+    "description": "A comprehensive development plan for Surat prepared through parametric analysis of the city’s existing urban fabric, land use, and regulations. The project explored innovative zoning approaches and redefined development regulations to address urban challenges. The proposals aimed to create an adaptive, sustainable, and inclusive framework for Surat’s future growth.",
+    "shortDescription": "Surat Urban Development Authority (SUDA) required an assessment for the city as part of its 2035 development plan.",
+    "coverImage": "assets/data/Project_1/P_1_image_3.png",
+    "images": [
+      "assets/data/Project_1/P_1_image_1.png",
+      "assets/data/Project_1/P_1_image_2.png",
+      "assets/data/Project_1/P_1_image_3.png"
+    ],
+    "client": "Surat Urban Development Authority (SUDA)",
+    "location": "Surat, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
     "id": "urban-revitalization",
     "title": "Downtown Urban Revitalization",
     "category": "urban",

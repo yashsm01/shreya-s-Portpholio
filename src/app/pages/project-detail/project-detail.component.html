@@ -1,7 +1,7 @@
 <ng-container *ngIf="!isLoading && project">
   <!-- Project Hero Banner -->
   <section class="project-hero bg-dark">
-    <div class="hero-image" [style.background-image]="'url(' + project.coverImage + ')'"></div>
+    <div class="hero-image" [style.background-image]="'url(\'' + project.coverImage + '\')'"></div>
     <div class="overlay"></div>
     <div class="container hero-content">
       <div class="category-tag">{{ project.categoryLabel }}</div>
