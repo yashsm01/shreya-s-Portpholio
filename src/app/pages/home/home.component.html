@@ -4,7 +4,7 @@
     <!-- Using a placeholder image since we don't have a video yet, but styling it like the reference hero -->
     <div class="overlay"></div>
   </div>
-  
+
   <div class="container hero-content">
     <div class="hero-text-wrap">
       <h1 class="hero-title">
@@ -12,7 +12,9 @@
       </h1>
       <div class="hero-separator">
         <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="currentColor" stroke-width="2"/>
+          <path
+            d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z"
+            stroke="currentColor" stroke-width="2" />
         </svg>
       </div>
       <p class="hero-desc">
@@ -39,7 +41,8 @@
       </div>
       <div class="about-image">
         <div class="image-wrapper">
-          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop" alt="Srushti Modi collaborative planning" loading="lazy">
+          <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop"
+            alt="Srushti Modi collaborative planning" loading="lazy">
         </div>
       </div>
     </div>
@@ -53,10 +56,12 @@
       <div class="col-md-6 order-md-2">
         <app-section-heading [title]="'HOME.EXPERTISE_URBAN' | translate" [centered]="false"></app-section-heading>
         <p>{{ 'HOME.EXPERTISE_URBAN_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}" class="btn btn-outline dark mt-4">{{
+          'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6 order-md-1">
-        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop" alt="Planning" class="expertise-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop"
+          alt="Planning" class="expertise-img" loading="lazy">
       </div>
     </div>
 
@@ -64,10 +69,12 @@
       <div class="col-md-6">
         <app-section-heading [title]="'HOME.EXPERTISE_HEALTHCARE' | translate" [centered]="false"></app-section-heading>
         <p>{{ 'HOME.EXPERTISE_HEALTHCARE_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="btn btn-outline dark mt-4">{{
+          'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6">
-        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Design" class="expertise-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
+          alt="Design" class="expertise-img" loading="lazy">
       </div>
     </div>
 
@@ -75,10 +82,12 @@
       <div class="col-md-6 order-md-2">
         <app-section-heading [title]="'HOME.EXPERTISE_LANDUSE' | translate" [centered]="false"></app-section-heading>
         <p>{{ 'HOME.EXPERTISE_LANDUSE_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="btn btn-outline dark mt-4">{{
+          'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6 order-md-1">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" alt="Engagement" class="expertise-img" loading="lazy">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
+          alt="Engagement" class="expertise-img" loading="lazy">
       </div>
     </div>
   </div>
@@ -91,7 +100,7 @@
       <app-section-heading [title]="'HOME.FEATURED_PROJECTS' | translate" [centered]="false"></app-section-heading>
       <a routerLink="/projects" class="text-gold see-all-link">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
     </div>
-    
+
     <div class="project-grid">
       <app-project-card *ngFor="let project of featuredProjects" [project]="project"></app-project-card>
     </div>
@@ -105,6 +114,6 @@
     <p class="mb-5 mx-auto" style="max-width: 600px; color: rgba(255,255,255,0.7)">
       {{ 'HOME.CTA_DESC' | translate }}
     </p>
-    <a href="mailto:hello@srushtimodi.com" class="btn btn-primary">{{ 'HOME.CONTACT_TODAY' | translate }}</a>
+    <a href="mailto:Ud.srushtimodi@gmail.com" class="btn btn-primary">{{ 'HOME.CONTACT_TODAY' | translate }}</a>
   </div>
 </section>

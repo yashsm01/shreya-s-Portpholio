@@ -4,15 +4,16 @@
   cursor: pointer;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   position: relative;
   background-color: $color-b;
-  
+
   &:hover {
     .card-image-wrap {
       .card-image {
         transform: scale(1.05);
       }
+
       .card-overlay {
         opacity: 1;
         visibility: visible;
@@ -26,7 +27,7 @@
   width: 100%;
   padding-top: 66.66%; // 3:2 aspect ratio
   overflow: hidden;
-  
+
   .card-image {
     position: absolute;
     top: 0;
@@ -34,6 +35,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transform: scale(1.05);
     transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
   }
 }
@@ -45,24 +47,26 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba($color-a, 0.9) 0%, rgba($color-a, 0.4) 100%);
-  opacity: 0;
-  visibility: hidden;
+  // opacity: 0;
+  // visibility: hidden;
   transition: all 0.4s ease;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 30px;
   color: $color-white;
+  opacity: 0.8;
+  visibility: visible;
 }
 
 .overlay-content {
   transform: translateY(20px);
   transition: transform 0.4s ease;
-  
+
   .project-card:hover & {
     transform: translateY(0);
   }
-  
+
   .category {
     font-family: $font-body;
     font-size: 12px;
@@ -72,13 +76,13 @@
     margin-bottom: 10px;
     display: block;
   }
-  
+
   h3 {
     color: $color-white;
     font-size: 24px;
     margin-bottom: 10px;
   }
-  
+
   p {
     font-size: 14px;
     color: rgba($color-white, 0.8);
@@ -88,7 +92,7 @@
     overflow: hidden;
     margin-bottom: 20px;
   }
-  
+
   .btn-view {
     display: inline-block;
     border-bottom: 2px solid $color-e;
@@ -98,7 +102,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     transition: color 0.3s ease;
-    
+
     &:hover {
       color: $color-e;
     }

@@ -84,7 +84,7 @@
     </button>
     
     <div class="lightbox-img-wrapper" [@slideAnimation]="currentImageIndex">
-      <img [src]="selectedImage" [key]="currentImageIndex" alt="Zoomed view" (click)="$event.stopPropagation()">
+      <img *ngIf="selectedImage" [src]="selectedImage" alt="Zoomed view" (click)="$event.stopPropagation()">
       <div class="image-counter">{{ currentImageIndex + 1 }} / {{ project?.images?.length }}</div>
     </div>
 
@@ -94,11 +94,11 @@
   </div>
 </div>
 <!-- Image Gallery -->
-<section class="gallery-section bg-light pb-120" *ngIf="project.images && project.images.length > 0">
+<section class="gallery-section bg-light pb-120" *ngIf="project?.images && project!.images.length > 0">
   <div class="container">
     <app-section-heading [title]="'PROJECT_DETAILS.GALLERY' | translate" [centered]="true"></app-section-heading>
     <div class="image-gallery">
-      <div class="gallery-item" *ngFor="let img of project.images; let i = index" (click)="openLightbox(img, i)">
+      <div class="gallery-item" *ngFor="let img of project?.images; let i = index" (click)="openLightbox(img, i)">
         <div class="zoom-icon">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <circle cx="11" cy="11" r="8"></circle>
