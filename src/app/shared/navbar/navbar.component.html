@@ -16,15 +16,17 @@
       <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
     </nav>
 
-    <div class="nav-actions">
-      <button class="lang-toggle nav-lang-btn" (click)="toggleLanguage()">{{ currentLang === 'en' ? 'FR' : 'EN' }}</button>
-      <a href="#contact" class="btn btn-primary btn-cta desktop-menu">{{ 'NAV.CONTACT' | translate }}</a>
-    </div>
+    <div class="nav-right">
+      <div class="nav-actions">
+        <button class="lang-toggle nav-lang-btn" (click)="toggleLanguage()">{{ currentLang === 'en' ? 'FR' : 'EN' }}</button>
+        <a href="#contact" class="btn btn-primary btn-cta desktop-menu">{{ 'NAV.CONTACT' | translate }}</a>
+      </div>
 
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
-      <span class="hamburger" [ngClass]="{'open': isMenuOpen}"></span>
-    </button>
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" (click)="toggleMenu()" [attr.aria-expanded]="isMenuOpen">
+        <span class="hamburger" [ngClass]="{'open': isMenuOpen}"></span>
+      </button>
+    </div>
   </div>
 
   <!-- Mobile Navigation Panel -->

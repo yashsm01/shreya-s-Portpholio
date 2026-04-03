@@ -173,15 +173,16 @@
   }
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 .nav-actions {
   display: flex;
   gap: 16px;
   align-items: center;
-  margin-right: 1.5rem;
-
-  @include media-up(lg) {
-    margin-right: 0;
-  }
 
   .btn-cta {
     background-color: transparent;
