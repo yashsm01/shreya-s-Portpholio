@@ -1,0 +1,22 @@
+[
+  {
+    "id": "pub1",
+    "title_en": "Living with Water: A Resilient Urban Framework for Surat",
+    "title_fr": "Vivre avec l'eau : Un cadre urbain résilient pour Surat",
+    "year": 2023,
+    "publisher": "Architecture Digest",
+    "link": "https://example.com/publication1",
+    "description_en": "Featured in the special edition on climate-adaptive urban planning.",
+    "description_fr": "Présenté dans l'édition spéciale sur l'urbanisme adapté au climat."
+  },
+  {
+    "id": "pub2",
+    "title_en": "Urban Density and Social Infrastructure",
+    "title_fr": "Densité urbaine et infrastructures sociales",
+    "year": 2022,
+    "publisher": "Urban Planning Review",
+    "link": "https://example.com/publication2",
+    "description_en": "A deep dive into the correlation between high-density housing and community wellbeing.",
+    "description_fr": "Une plongée dans la corrélation entre les logements à haute densité et le bien-être de la communauté."
+  }
+]

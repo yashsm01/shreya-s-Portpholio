@@ -3,6 +3,8 @@
     "HOME": "Home",
     "PORTFOLIO": "Portfolio",
     "ABOUT": "About",
+    "PUBLICATIONS": "Publications",
+    "ACHIEVEMENTS": "Achievements",
     "CONTACT": "Contact / Get a quote"
   },
   "FOOTER": {
@@ -58,5 +60,13 @@
     "GALLERY": "Gallery",
     "CTA_TITLE": "Interested in a similar project?",
     "LETS_TALK": "Let's Talk"
+  },
+  "PUBLICATIONS": {
+    "SUBTITLE": "A collection of research, articles, and features.",
+    "VIEW_PUBLICATION": "View Publication"
+  },
+  "ACHIEVEMENTS": {
+    "SUBTITLE": "Recognition, awards, and professional milestones.",
+    "VIEW_MORE": "View Details"
   }
 }

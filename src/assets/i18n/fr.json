@@ -3,6 +3,8 @@
     "HOME": "Accueil",
     "PORTFOLIO": "Portefeuille",
     "ABOUT": "À propos",
+    "PUBLICATIONS": "Publications",
+    "ACHIEVEMENTS": "Réalisations",
     "CONTACT": "Contact / Obtenir un devis"
   },
   "FOOTER": {
@@ -58,5 +60,13 @@
     "GALLERY": "Galerie",
     "CTA_TITLE": "Intéressé par un projet similaire ?",
     "LETS_TALK": "Discutons-en"
+  },
+  "PUBLICATIONS": {
+    "SUBTITLE": "Une collection de recherches, d'articles et de dossiers.",
+    "VIEW_PUBLICATION": "Voir la publication"
+  },
+  "ACHIEVEMENTS": {
+    "SUBTITLE": "Reconnaissance, prix et jalons professionnels.",
+    "VIEW_MORE": "Voir les détails"
   }
 }

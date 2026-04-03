@@ -1,0 +1,154 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+.page-header {
+  padding-top: 160px;
+  padding-bottom: 80px;
+
+  .page-title {
+    font-size: 56px;
+    margin-bottom: 10px;
+    color: $color-white;
+    animation: fadeInUp 0.8s ease forwards;
+    
+    @include media-down(md) {
+      font-size: 40px;
+    }
+  }
+
+  .separator {
+    animation: scaleIn 0.8s ease 0.2s forwards;
+    opacity: 0;
+  }
+}
+
+.pt-60 { padding-top: 60px; }
+.pb-120 { padding-bottom: 120px; }
+.mt-5 { margin-top: 3rem; }
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+
+  @include media-up(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-up(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.info-card {
+  background-color: $color-white;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 4px solid $color-e;
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 30px;
+  height: 100%;
+}
+
+.card-year {
+  font-family: $font-heading;
+  font-size: 48px;
+  font-weight: 700;
+  color: rgba($color-a, 0.05);
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  line-height: 1;
+  pointer-events: none;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+
+  .category {
+    font-family: $font-body;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-e;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  .card-title {
+    font-size: 22px;
+    color: $color-a;
+    margin-bottom: 15px;
+  }
+
+  .card-description {
+    font-size: 15px;
+    color: rgba($color-c, 0.7);
+    margin-bottom: 25px;
+    flex-grow: 1;
+  }
+
+  .btn-view {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    border-bottom: 2px solid $color-e;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: $color-a;
+    transition: color 0.3s ease;
+
+    svg {
+      transition: transform 0.3s ease;
+    }
+
+    &:hover {
+      color: $color-e;
+      svg {
+        transform: translate(3px, -3px);
+      }
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}

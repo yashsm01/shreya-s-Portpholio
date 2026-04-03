@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ach1",
+    "title_en": "Surat Development Authority - Excellence in Urban Planning",
+    "title_fr": "Autorité de développement de Surat - Excellence en urbanisme",
+    "year": 2024,
+    "organization": "SUDA Excellence Awards",
+    "description_en": "Awarded for the Strategic Urban Growth Assessment for Surat 2035.",
+    "description_fr": "Distingué pour l'évaluation stratégique de la croissance urbaine de Surat 2035."
+  },
+  {
+    "id": "ach2",
+    "title_en": "Global Sustainable Cities Design Competition",
+    "title_fr": "Concours mondial de design pour les villes durables",
+    "year": 2023,
+    "organization": "International Urban Lab",
+    "description_en": "Ranked in the top 5 for the 'Future Community' project proposal.",
+    "description_fr": "Classé dans le top 5 pour la proposition de projet 'Future Community'."
+  }
+]

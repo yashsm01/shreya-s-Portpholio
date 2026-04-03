@@ -1,0 +1,36 @@
+<div class="page-header bg-dark">
+  <div class="container">
+    <h1 class="page-title">{{ 'NAV.ACHIEVEMENTS' | translate }}.</h1>
+    <div class="separator">
+      <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+    <p class="subtitle lead mt-4" style="color: rgba(255,255,255,0.7); max-width: 600px;">{{ 'ACHIEVEMENTS.SUBTITLE' | translate }}</p>
+  </div>
+</div>
+
+<section class="bg-light pt-60 pb-120">
+  <div class="container">
+    <div class="project-grid mt-5" [@listAnimation]="achievements.length">
+      <div *ngFor="let ach of achievements" class="info-card">
+        <div class="card-inner">
+          <div class="card-year">{{ ach.year }}</div>
+          <div class="card-content">
+            <span class="category">{{ ach.organization }}</span>
+            <h3 class="card-title">{{ getTranslateKey(ach, 'title') }}</h3>
+            <p class="card-description">{{ getTranslateKey(ach, 'description') }}</p>
+            <a *ngIf="ach.link" [href]="ach.link" target="_blank" class="btn-view">
+              {{ 'ACHIEVEMENTS.VIEW_MORE' | translate }}
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

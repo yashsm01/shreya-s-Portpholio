@@ -2,6 +2,9 @@ import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, map } from 'rxjs';
 import { Project } from '../models/project.model';
+import { Publication } from '../models/publication.model';
+import { Achievement } from '../models/achievement.model';
+
 
 @Injectable({
   providedIn: 'root'
@@ -34,4 +37,13 @@ export class ProjectService {
       map(projects => projects.filter(p => p.featured))
     );
   }
+
+  getPublications(): Observable<Publication[]> {
+    return this.http.get<Publication[]>('assets/data/publications.json');
+  }
+
+  getAchievements(): Observable<Achievement[]> {
+    return this.http.get<Achievement[]>('assets/data/achievements.json');
+  }
 }
+
