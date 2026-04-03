@@ -83,6 +83,44 @@
         font-size: 24px;
       }
     }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      margin-top: 20px;
+
+      .hero-socials {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        position: relative;
+        padding-left: 30px;
+
+        &::before {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+          height: 30px;
+          background-color: rgba($color-white, 0.2);
+        }
+
+        a {
+          color: rgba($color-white, 0.85);
+          transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          display: flex;
+          align-items: center;
+
+          &:hover {
+            color: $color-e;
+            transform: translateY(-5px) scale(1.1);
+          }
+        }
+      }
+    }
   }
 }
 
