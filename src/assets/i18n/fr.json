@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "HOME": "Accueil",
+    "PORTFOLIO": "Portefeuille",
+    "ABOUT": "À propos",
+    "CONTACT": "Contact / Obtenir un devis"
+  },
+  "FOOTER": {
+    "DESC": "Une agence d'architecture et de design urbain dynamique et tournée vers l'avenir, qui croit en la création d'espaces et de lieux exceptionnels.",
+    "EXPERTISE": "Expertise",
+    "STUDIO": "Studio",
+    "RESERVED": "Tous droits réservés"
+  },
+  "HOME": {
+    "HERO_TITLE": "Architecture et Design Urbain",
+    "HERO_SUBTITLE": "Créer des espaces durables et prêts pour l'avenir pour les communautés du monde entier.",
+    "EXPLORE_WORK": "Explorer les Projets",
+    "CONTACT_US": "Contactez-nous",
+    "ABOUT": "À propos du cabinet",
+    "ABOUT_DESC_1": "Nous sommes une équipe d'architectes visionnaires, d'urbanistes et de designers dédiés à la création d'environnements qui inspirent la connexion humaine et favorisent la croissance durable.",
+    "ABOUT_DESC_2": "Notre approche allie une recherche analytique approfondie à un design intuitif pour relever les défis complexes des villes modernes.",
+    "LEARN_MORE": "En savoir plus",
+    "EXPERTISE_TITLE": "Domaines d'Expertise",
+    "EXPERTISE_URBAN": "Design Urbain",
+    "EXPERTISE_URBAN_DESC": "Nous nous spécialisons dans le développement holistique des espaces urbains, en accordant la priorité à la connectivité du domaine public et à l'intégration des transports durables.",
+    "EXPERTISE_HEALTHCARE": "Architecture de Santé",
+    "EXPERTISE_HEALTHCARE_DESC": "Conception d'établissements médicaux de pointe axés sur l'humain, privilégiant le bien-être des patients et l'efficacité opérationnelle.",
+    "EXPERTISE_LANDUSE": "Planification de l'Occupation des Sols",
+    "EXPERTISE_LANDUSE_DESC": "Cadres stratégiques pour la croissance municipale, assurant un développement écologique et économique équilibré.",
+    "EXPERTISE_GIS": "Analyse SIG",
+    "EXPERTISE_GIS_DESC": "Utilisation d'algorithmes de cartographie géospatiale avancés pour découvrir des informations exploitables pour la macro-planification.",
+    "EXPERTISE_COMMERCIAL": "Résidentiel & Commercial",
+    "EXPERTISE_COMMERCIAL_DESC": "Conception de bâtiments innovante offrant une esthétique moderne, une fonctionnalité et un retour sur investissement maximal pour les développements.",
+    "FEATURED_PROJECTS": "Projets en Vedette",
+    "VIEW_ALL": "Voir tous les Projets",
+    "CTA_TITLE": "Prêt à construire l'avenir ?",
+    "CTA_DESC": "Contactez-nous pour discuter de la façon dont nous pouvons donner vie à vos visions architecturales et urbaines.",
+    "CONTACT_TODAY": "Contactez-nous Aujourd'hui"
+  },
+  "PROJECTS": {
+    "TITLE": "Notre Portefeuille",
+    "ALL": "Tous",
+    "URBAN": "Design Urbain",
+    "HEALTHCARE": "Santé",
+    "LANDUSE": "Occupation des sols",
+    "GIS": "Analyse SIG",
+    "BUILDINGS": "Bâtiments"
+  },
+  "PROJECT_DETAILS": {
+    "BACK": "Retour au Portefeuille",
+    "OVERVIEW": "Aperçu du Projet",
+    "DETAILS": "Détails du Projet",
+    "LOCATION": "Emplacement",
+    "COMPLETION": "Achèvement",
+    "AREA": "Superficie",
+    "CLIENT": "Client",
+    "EXPERTISE": "Expertise",
+    "GALLERY": "Galerie",
+    "CTA_TITLE": "Intéressé par un projet similaire ?",
+    "LETS_TALK": "Discutons-en"
+  }
+}

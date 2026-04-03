@@ -14,55 +14,72 @@
 
   &.scrolled {
     /* Dark Glassmorphic Header */
-    background-color: rgba(#0f254a, 0.85); /* Dark Navy with transparency */
+    background-color: rgba($color-a, 0.85);
+    /* Dark Navy with transparency */
     padding: 15px 0;
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba($color-white, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 
     /* Light Fonts and Borders */
     .logo-circle {
-      border-color: #ffffff;
-      color: #ffffff;
-      
+      border-color: $color-white;
+      color: $color-white;
+
       &:hover {
-        background-color: #996515; /* Gold */
-        border-color: #996515;
-        color: #ffffff;
+        background-color: $color-e;
+        /* Gold */
+        border-color: $color-e;
+        color: $color-white;
       }
     }
 
     .logo-text {
-      color: #ffffff;
+      color: $color-white;
     }
 
     .nav-links a {
-      color: #ffffff;
+      color: $color-white;
       font-weight: 500;
-      
-      &:hover, &.active {
-        color: #996515; /* Gold */
+
+      &:hover,
+      &.active {
+        color: $color-e;
+        /* Gold */
       }
     }
 
     .btn-cta {
-      border-color: #ffffff;
-      color: #ffffff;
+      border-color: $color-white;
+      color: $color-white;
       background-color: transparent;
-      
+
       &:hover {
-        background-color: #ffffff;
-        color: #0f254a !important; /* Navy */
+        background-color: $color-white;
+        color: $color-a !important;
+        /* Navy */
+      }
+    }
+
+    .nav-lang-btn {
+      border-color: rgba($color-white, 0.4);
+      color: $color-white;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-a;
       }
     }
 
     .hamburger {
-      background-color: #ffffff;
-      
-      &::before, &::after {
-        background-color: #ffffff;
+      background-color: $color-white;
+
+      &::before,
+      &::after {
+        background-color: $color-white;
       }
+
       &.open {
         background-color: transparent;
       }
@@ -81,7 +98,7 @@
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  
+
   .logo-circle {
     display: flex;
     align-items: center;
@@ -96,7 +113,7 @@
     font-size: 18px;
     transition: all 0.3s ease;
   }
-  
+
   .logo-text {
     color: $color-white;
     font-family: $font-body;
@@ -105,7 +122,7 @@
     letter-spacing: 1px;
     display: none;
     transition: color 0.3s ease;
-    
+
     @include media-up(md) {
       display: block;
     }
@@ -120,7 +137,7 @@
 
 .desktop-menu {
   display: none;
-  
+
   @include media-up(lg) {
     display: flex;
   }
@@ -129,7 +146,7 @@
 .nav-links {
   gap: 35px;
   align-items: center;
-  
+
   a {
     color: $color-white;
     font-weight: 400;
@@ -137,7 +154,7 @@
     position: relative;
     padding-bottom: 5px;
     transition: color 0.3s ease;
-    
+
     &::after {
       content: '';
       position: absolute;
@@ -148,23 +165,51 @@
       background-color: $color-e;
       transition: width 0.3s ease;
     }
-    
-    &:hover::after, &.active::after {
+
+    &:hover::after,
+    &.active::after {
       width: 100%;
     }
   }
 }
 
 .nav-actions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-right: 1.5rem;
+
+  @include media-up(lg) {
+    margin-right: 0;
+  }
+
   .btn-cta {
     background-color: transparent;
     border: 2px solid $color-white;
     color: $color-white;
     transition: all 0.3s ease;
-    
+
     &:hover {
       background-color: $color-white;
       color: $color-a !important;
+    }
+  }
+
+  .nav-lang-btn {
+    background: transparent;
+    border: 1px solid rgba($color-white, 0.4);
+    color: $color-white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: $font-body;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-a;
     }
   }
 }
@@ -179,11 +224,11 @@
   width: 30px;
   height: 24px;
   position: relative;
-  
+
   @include media-up(lg) {
     display: none;
   }
-  
+
   .hamburger {
     display: block;
     width: 100%;
@@ -193,8 +238,9 @@
     top: 50%;
     transform: translateY(-50%);
     transition: background-color 0.3s ease;
-    
-    &::before, &::after {
+
+    &::before,
+    &::after {
       content: '';
       position: absolute;
       left: 0;
@@ -203,24 +249,24 @@
       background-color: $color-white;
       transition: transform 0.3s ease, top 0.3s ease, background-color 0.3s ease;
     }
-    
+
     &::before {
       top: -8px;
     }
-    
+
     &::after {
       top: 8px;
     }
-    
+
     &.open {
       background-color: transparent !important;
-      
+
       &::before {
         top: 0;
         transform: rotate(45deg);
         background-color: $color-white !important; // Needs to be white because overlay is dark
       }
-      
+
       &::after {
         top: 0;
         transform: rotate(-45deg);
@@ -242,21 +288,21 @@
   justify-content: center;
   transition: right 0.4s cubic-bezier(0.77, 0, 0.175, 1);
   z-index: 1000;
-  
+
   @include media-up(lg) {
     display: none;
   }
-  
+
   &.open {
     right: 0;
   }
-  
+
   .mobile-nav-links {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    
+
     a:not(.btn) {
       color: $color-white;
       font-family: $font-heading;
@@ -264,15 +310,34 @@
       font-weight: 500;
       opacity: 0.8;
       transition: opacity 0.3s ease, color 0.3s ease;
-      
-      &:hover, &.active {
+
+      &:hover,
+      &.active {
         color: $color-e;
         opacity: 1;
       }
     }
-    
+
     .mt-4 {
       margin-top: 2rem;
+    }
+
+    .mobile-lang-btn {
+      background: transparent;
+      border: 1px solid rgba($color-white, 0.4);
+      color: $color-white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 18px;
+      font-family: $font-body;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: $color-white;
+        color: $color-a;
+      }
     }
   }
 }

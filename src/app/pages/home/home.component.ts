@@ -5,16 +5,18 @@ import { SectionHeadingComponent } from '../../shared/section-heading/section-he
 import { ProjectCardComponent } from '../../shared/project-card/project-card.component';
 import { ProjectService } from '../../services/project.service';
 import { Project } from '../../models/project.model';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [CommonModule, RouterModule, SectionHeadingComponent, ProjectCardComponent],
+  imports: [CommonModule, RouterModule, SectionHeadingComponent, ProjectCardComponent, TranslateModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit {
   private projectService = inject(ProjectService);
+  public translate = inject(TranslateService);
   featuredProjects: Project[] = [];
 
   expertiseAreas = [

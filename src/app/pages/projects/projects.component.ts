@@ -6,11 +6,12 @@ import { Project } from '../../models/project.model';
 import { FilterBarComponent } from '../../shared/filter-bar/filter-bar.component';
 import { ProjectCardComponent } from '../../shared/project-card/project-card.component';
 import { SectionHeadingComponent } from '../../shared/section-heading/section-heading.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule, FilterBarComponent, ProjectCardComponent, SectionHeadingComponent],
+  imports: [CommonModule, FilterBarComponent, ProjectCardComponent, SectionHeadingComponent, TranslateModule],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })

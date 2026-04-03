@@ -1,13 +1,18 @@
 export interface Project {
   id: string;
-  title: string;
+  title_en: string;
+  title_fr: string;
   category: string;
-  categoryLabel: string;
-  description: string;
-  shortDescription?: string;
+  categoryLabel_en: string;
+  categoryLabel_fr: string;
+  description_en: string;
+  description_fr: string;
+  shortDescription_en?: string;
+  shortDescription_fr?: string;
   coverImage: string;
   images: string[];
-  location?: string;
+  location_en?: string;
+  location_fr?: string;
   year?: number;
   area?: string;
   client?: string;

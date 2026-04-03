@@ -1,0 +1,62 @@
+{
+  "NAV": {
+    "HOME": "Home",
+    "PORTFOLIO": "Portfolio",
+    "ABOUT": "About",
+    "CONTACT": "Contact / Get a quote"
+  },
+  "FOOTER": {
+    "DESC": "A dynamic, future-focused architecture and urban design practice that believes in creating great places and spaces.",
+    "EXPERTISE": "Expertise",
+    "STUDIO": "Studio",
+    "RESERVED": "All rights reserved"
+  },
+  "HOME": {
+    "HERO_TITLE": "Architecture & Urban Design",
+    "HERO_SUBTITLE": "Creating sustainable, future-ready spaces for communities across the globe.",
+    "EXPLORE_WORK": "Explore Work",
+    "CONTACT_US": "Contact Us",
+    "ABOUT": "About The Practice",
+    "ABOUT_DESC_1": "We are a team of visionary architects, urban planners, and designers dedicated to creating environments that inspire human connection and drive sustainable growth.",
+    "ABOUT_DESC_2": "Our approach blends deep analytical research with intuitive design to address the complex challenges of modern cities.",
+    "LEARN_MORE": "Learn More",
+    "EXPERTISE_TITLE": "Areas of Expertise",
+    "EXPERTISE_URBAN": "Urban Design",
+    "EXPERTISE_URBAN_DESC": "We specialize in the holistic development of urban spaces, prioritizing public realm connectivity and sustainable transit integration.",
+    "EXPERTISE_HEALTHCARE": "Healthcare Architecture",
+    "EXPERTISE_HEALTHCARE_DESC": "Designing cutting-edge, human-centric medical facilities focusing on patient wellbeing and operational efficiency.",
+    "EXPERTISE_LANDUSE": "Landuse Planning",
+    "EXPERTISE_LANDUSE_DESC": "Strategic frameworks for municipal growth, ensuring balanced ecological and economic development.",
+    "EXPERTISE_GIS": "GIS Analysis",
+    "EXPERTISE_GIS_DESC": "Utilizing advanced geospatial mapping algorithms to uncover insights for macro-planning.",
+    "EXPERTISE_COMMERCIAL": "Residential & Commercial",
+    "EXPERTISE_COMMERCIAL_DESC": "Innovative building design delivering modern aesthetics, functionality, and maximum ROI for developments.",
+    "FEATURED_PROJECTS": "Featured Projects",
+    "VIEW_ALL": "View All Projects",
+    "CTA_TITLE": "Ready to build the future?",
+    "CTA_DESC": "Get in touch with us to discuss how we can bring your architectural and urban planning visions to life.",
+    "CONTACT_TODAY": "Contact Us Today"
+  },
+  "PROJECTS": {
+    "TITLE": "Our Portfolio",
+    "ALL": "All",
+    "URBAN": "Urban Design",
+    "HEALTHCARE": "Healthcare",
+    "LANDUSE": "Landuse",
+    "GIS": "GIS Analysis",
+    "BUILDINGS": "Buildings"
+  },
+  "PROJECT_DETAILS": {
+    "BACK": "Back to Portfolio",
+    "OVERVIEW": "Project Overview",
+    "DETAILS": "Project Details",
+    "LOCATION": "Location",
+    "COMPLETION": "Completion",
+    "AREA": "Area",
+    "CLIENT": "Client",
+    "EXPERTISE": "Expertise",
+    "GALLERY": "Gallery",
+    "CTA_TITLE": "Interested in a similar project?",
+    "LETS_TALK": "Let's Talk"
+  }
+}

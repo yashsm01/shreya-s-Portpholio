@@ -10,13 +10,15 @@
 
     <!-- Desktop Navigation -->
     <nav class="nav-links desktop-menu">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-      <a routerLink="/projects" routerLinkActive="active">Portfolio</a>
-      <a href="#about" (click)="closeMenu()">About</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'NAV.HOME' | translate
+        }}</a>
+      <a routerLink="/projects" routerLinkActive="active">{{ 'NAV.PORTFOLIO' | translate }}</a>
+      <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
     </nav>
 
-    <div class="nav-actions desktop-menu">
-      <a href="#contact" class="btn btn-primary btn-cta">Contact / Get a quote</a>
+    <div class="nav-actions">
+      <button class="lang-toggle nav-lang-btn" (click)="toggleLanguage()">{{ currentLang === 'en' ? 'FR' : 'EN' }}</button>
+      <a href="#contact" class="btn btn-primary btn-cta desktop-menu">{{ 'NAV.CONTACT' | translate }}</a>
     </div>
 
     <!-- Mobile Menu Toggle -->
@@ -28,10 +30,11 @@
   <!-- Mobile Navigation Panel -->
   <div class="mobile-menu-overlay" [ngClass]="{'open': isMenuOpen}">
     <nav class="mobile-nav-links">
-      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">Home</a>
-      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Portfolio</a>
-      <a href="#about" (click)="closeMenu()">About</a>
-      <a href="#contact" class="btn btn-primary mt-4" (click)="closeMenu()">Contact / Get a quote</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">{{
+        'NAV.HOME' | translate }}</a>
+      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PORTFOLIO' | translate }}</a>
+      <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+      <a href="#contact" class="btn btn-primary mt-4" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
     </nav>
   </div>
 </header>

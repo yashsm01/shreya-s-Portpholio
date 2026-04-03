@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 export interface FilterOption {
   id: string;
@@ -9,7 +10,7 @@ export interface FilterOption {
 @Component({
   selector: 'app-filter-bar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './filter-bar.component.html',
   styleUrl: './filter-bar.component.scss'
 })
@@ -18,12 +19,12 @@ export class FilterBarComponent {
   @Output() filterChange = new EventEmitter<string>();
 
   filters: FilterOption[] = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'urban', label: 'Urban Design' },
-    { id: 'healthcare', label: 'Healthcare Architecture' },
-    { id: 'landuse', label: 'Landuse Planning' },
-    { id: 'gis', label: 'GIS Analysis' },
-    { id: 'buildings', label: 'Residential & Commercial' }
+    { id: 'all', label: 'PROJECTS.ALL' },
+    { id: 'urban', label: 'PROJECTS.URBAN' },
+    { id: 'healthcare', label: 'PROJECTS.HEALTHCARE' },
+    { id: 'landuse', label: 'PROJECTS.LANDUSE' },
+    { id: 'gis', label: 'PROJECTS.GIS' },
+    { id: 'buildings', label: 'PROJECTS.BUILDINGS' }
   ];
 
   setFilter(id: string): void {

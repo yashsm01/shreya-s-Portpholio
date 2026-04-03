@@ -8,18 +8,17 @@
   <div class="container hero-content">
     <div class="hero-text-wrap">
       <h1 class="hero-title">
-        <span class="light">We are experts in</span><br>
-        <span class="animated-text">planning, design, and engagement.</span>
+        <span class="animated-text">{{ 'HOME.HERO_TITLE' | translate }}</span>
       </h1>
       <div class="hero-separator">
-        <svg width="60" height="10" viewBox="0 0 60 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="#9bc631" stroke-width="2"/>
+        <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="currentColor" stroke-width="2"/>
         </svg>
       </div>
       <p class="hero-desc">
-        We are a dynamic, future-focused, multi-disciplinary team that believes in creating great places and spaces.
+        {{ 'HOME.HERO_SUBTITLE' | translate }}
       </p>
-      <a href="#about" class="btn btn-outline">Learn more</a>
+      <a href="#about" class="btn btn-outline">{{ 'HOME.LEARN_MORE' | translate }}</a>
     </div>
   </div>
 </section>
@@ -29,14 +28,14 @@
   <div class="container">
     <div class="about-grid">
       <div class="about-content">
-        <app-section-heading title="We are collaborative problem solvers" [centered]="false"></app-section-heading>
+        <app-section-heading [title]="'HOME.ABOUT' | translate" [centered]="false"></app-section-heading>
         <p class="lead">
-          It is our belief that when we work together to create future-focused solutions, we are at our best.
+          {{ 'HOME.ABOUT_DESC_1' | translate }}
         </p>
         <p>
-          When you partner with us, we assemble the most qualified, customized team that seamlessly integrates into your project team. We bring a diverse perspective to urban design, healthcare architecture, and landuse planning.
+          {{ 'HOME.ABOUT_DESC_2' | translate }}
         </p>
-        <a routerLink="/projects" class="btn btn-primary mt-4">What can we do for you?</a>
+        <a routerLink="/projects" class="btn btn-primary mt-4">{{ 'HOME.EXPLORE_WORK' | translate }}</a>
       </div>
       <div class="about-image">
         <div class="image-wrapper">
@@ -52,9 +51,9 @@
   <div class="container">
     <div class="row align-items-center mb-80">
       <div class="col-md-6 order-md-2">
-        <app-section-heading title="Planning" [centered]="false"></app-section-heading>
-        <p>Our team of specialists provides a range of planning services from land-use strategy to statutory and growth planning initiatives. We guide clients through complex and evolving municipal, regional and provincial frameworks to ensure project alignment.</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="btn btn-outline dark mt-4">Discover our planning studio</a>
+        <app-section-heading [title]="'HOME.EXPERTISE_URBAN' | translate" [centered]="false"></app-section-heading>
+        <p>{{ 'HOME.EXPERTISE_URBAN_DESC' | translate }}</p>
+        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6 order-md-1">
         <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop" alt="Planning" class="expertise-img" loading="lazy">
@@ -63,9 +62,9 @@
 
     <div class="row align-items-center mb-80">
       <div class="col-md-6">
-        <app-section-heading title="Design" [centered]="false"></app-section-heading>
-        <p>We offer customized and innovative design solutions that exceed policy requirements and client expectations. Our practice is founded on functionality, sustainability, and modern design, focusing on healthcare architecture and residential developments.</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'buildings'}" class="btn btn-outline dark mt-4">Discover our design studio</a>
+        <app-section-heading [title]="'HOME.EXPERTISE_HEALTHCARE' | translate" [centered]="false"></app-section-heading>
+        <p>{{ 'HOME.EXPERTISE_HEALTHCARE_DESC' | translate }}</p>
+        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6">
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" alt="Design" class="expertise-img" loading="lazy">
@@ -74,9 +73,9 @@
 
     <div class="row align-items-center">
       <div class="col-md-6 order-md-2">
-        <app-section-heading title="Engagement" [centered]="false"></app-section-heading>
-        <p>We create and manage engagement programs that reflect the scale and context of project requirements. We work with communities to understand interests, build relationships and develop project solutions based on GIS analysis and demographic studies.</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'urban'}" class="btn btn-outline dark mt-4">Discover our engagement studio</a>
+        <app-section-heading [title]="'HOME.EXPERTISE_LANDUSE' | translate" [centered]="false"></app-section-heading>
+        <p>{{ 'HOME.EXPERTISE_LANDUSE_DESC' | translate }}</p>
+        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="btn btn-outline dark mt-4">{{ 'HOME.LEARN_MORE' | translate }}</a>
       </div>
       <div class="col-md-6 order-md-1">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop" alt="Engagement" class="expertise-img" loading="lazy">
@@ -89,8 +88,8 @@
 <section class="featured-projects bg-light pt-120 pb-120">
   <div class="container">
     <div class="d-flex justify-content-between align-items-end mb-5">
-      <app-section-heading title="Selected Works" [centered]="false"></app-section-heading>
-      <a routerLink="/projects" class="text-gold see-all-link">View All Projects &rarr;</a>
+      <app-section-heading [title]="'HOME.FEATURED_PROJECTS' | translate" [centered]="false"></app-section-heading>
+      <a routerLink="/projects" class="text-gold see-all-link">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
     </div>
     
     <div class="project-grid">
@@ -102,10 +101,10 @@
 <!-- Contact Banner -->
 <section id="contact" class="contact-banner bg-dark">
   <div class="container text-center">
-    <h2 class="mb-4">Ready to start your next project?</h2>
+    <h2 class="mb-4">{{ 'HOME.CTA_TITLE' | translate }}</h2>
     <p class="mb-5 mx-auto" style="max-width: 600px; color: rgba(255,255,255,0.7)">
-      Get in touch with us to discuss how we can bring your architectural and urban planning visions to life.
+      {{ 'HOME.CTA_DESC' | translate }}
     </p>
-    <a href="mailto:hello@srushtimodi.com" class="btn btn-primary">Contact Us Today</a>
+    <a href="mailto:hello@srushtimodi.com" class="btn btn-primary">{{ 'HOME.CONTACT_TODAY' | translate }}</a>
   </div>
 </section>

@@ -1,12 +1,12 @@
 <div class="project-card" [routerLink]="['/projects', project.id]">
   <div class="card-image-wrap">
-    <img [src]="project.coverImage" [alt]="project.title" class="card-image" loading="lazy">
+    <img [src]="project.coverImage" [alt]="title" class="card-image" loading="lazy">
     <div class="card-overlay">
       <div class="overlay-content">
-        <span class="category">{{ project.categoryLabel }}</span>
-        <h3>{{ project.title }}</h3>
-        <p *ngIf="project.shortDescription">{{ project.shortDescription }}</p>
-        <span class="btn-view">View Project</span>
+        <span class="category">{{ categoryLabel }}</span>
+        <h3>{{ title }}</h3>
+        <p *ngIf="shortDescription">{{ shortDescription }}</p>
+        <span class="btn-view">{{ 'PROJECT_DETAILS.OVERVIEW' | translate }}</span>
       </div>
     </div>
   </div>

@@ -9,33 +9,33 @@
         </a>
       </div>
       <p class="brand-desc">
-        A dynamic, future-focused architecture and urban design practice that believes in creating great places and spaces.
+        {{ 'FOOTER.DESC' | translate }}
       </p>
     </div>
 
     <div class="footer-links">
       <div class="link-group">
-        <h4>Expertise</h4>
-        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}">Urban Design</a>
-        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}">Healthcare Architecture</a>
-        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}">Landuse Planning</a>
-        <a routerLink="/projects" [queryParams]="{filter: 'gis'}">GIS Analysis</a>
-        <a routerLink="/projects" [queryParams]="{filter: 'buildings'}">Residential & Commercial</a>
+        <h4>{{ 'FOOTER.EXPERTISE' | translate }}</h4>
+        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}">{{ 'HOME.EXPERTISE_URBAN' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}">{{ 'HOME.EXPERTISE_HEALTHCARE' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}">{{ 'HOME.EXPERTISE_LANDUSE' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'gis'}">{{ 'HOME.EXPERTISE_GIS' | translate }}</a>
+        <a routerLink="/projects" [queryParams]="{filter: 'buildings'}">{{ 'HOME.EXPERTISE_COMMERCIAL' | translate }}</a>
       </div>
       
       <div class="link-group">
-        <h4>Studio</h4>
-        <a routerLink="/">Home</a>
-        <a routerLink="/projects">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
+        <h4>{{ 'FOOTER.STUDIO' | translate }}</h4>
+        <a routerLink="/">{{ 'NAV.HOME' | translate }}</a>
+        <a routerLink="/projects">{{ 'NAV.PORTFOLIO' | translate }}</a>
+        <a href="#about">{{ 'NAV.ABOUT' | translate }}</a>
+        <a href="#contact">{{ 'NAV.CONTACT' | translate }}</a>
       </div>
     </div>
   </div>
   
   <div class="footer-bottom">
     <div class="container bottom-inner">
-      <p>&copy; {{ currentYear }} Srushti Modi. All rights reserved.</p>
+      <p>&copy; {{ currentYear }} Srushti Modi. {{ 'FOOTER.RESERVED' | translate }}.</p>
       <div class="social-links">
         <a href="#" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
