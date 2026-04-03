@@ -1,4 +1,5 @@
 import { ApplicationConfig } from '@angular/core';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { provideTranslateService } from '@ngx-translate/core';
@@ -18,6 +19,7 @@ export const appConfig: ApplicationConfig = {
     provideTranslateService({
       defaultLanguage: 'en',
     }),
-    provideTranslateHttpLoader()
+    provideTranslateHttpLoader(),
+    provideAnimations()
   ]
 };
