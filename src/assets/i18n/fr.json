@@ -6,13 +6,13 @@
     "CONTACT": "Contact / Obtenir un devis"
   },
   "FOOTER": {
-    "DESC": "Une agence d'architecture et de design urbain dynamique et tournée vers l'avenir, qui croit en la création d'espaces et de lieux exceptionnels.",
+    "DESC": "Une agence d'architecture et de Urbanisme dynamique et tournée vers l'avenir, qui croit en la création d'espaces et de lieux exceptionnels.",
     "EXPERTISE": "Expertise",
     "STUDIO": "Studio",
     "RESERVED": "Tous droits réservés"
   },
   "HOME": {
-    "HERO_TITLE": "Architecture et Design Urbain",
+    "HERO_TITLE": "Architecture et Urbanisme",
     "HERO_SUBTITLE": "Créer des espaces durables et prêts pour l'avenir pour les communautés du monde entier.",
     "EXPLORE_WORK": "Explorer les Projets",
     "CONTACT_US": "Contactez-nous",
@@ -21,7 +21,7 @@
     "ABOUT_DESC_2": "Notre approche allie une recherche analytique approfondie à un design intuitif pour relever les défis complexes des villes modernes.",
     "LEARN_MORE": "En savoir plus",
     "EXPERTISE_TITLE": "Domaines d'Expertise",
-    "EXPERTISE_URBAN": "Design Urbain",
+    "EXPERTISE_URBAN": "Urbanisme",
     "EXPERTISE_URBAN_DESC": "Nous nous spécialisons dans le développement holistique des espaces urbains, en accordant la priorité à la connectivité du domaine public et à l'intégration des transports durables.",
     "EXPERTISE_HEALTHCARE": "Architecture de Santé",
     "EXPERTISE_HEALTHCARE_DESC": "Conception d'établissements médicaux de pointe axés sur l'humain, privilégiant le bien-être des patients et l'efficacité opérationnelle.",
@@ -40,7 +40,7 @@
   "PROJECTS": {
     "TITLE": "Notre Portefeuille",
     "ALL": "Tous",
-    "URBAN": "Design Urbain",
+    "URBAN": "Urbanisme",
     "HEALTHCARE": "Santé",
     "LANDUSE": "Occupation des sols",
     "GIS": "Analyse SIG",

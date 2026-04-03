@@ -6,7 +6,7 @@
     "CONTACT": "Contact / Get a quote"
   },
   "FOOTER": {
-    "DESC": "A dynamic, future-focused architecture and urban design practice that believes in creating great places and spaces.",
+    "DESC": "A dynamic, future-focused architecture and urban planning practice that believes in creating great places and spaces.",
     "EXPERTISE": "Expertise",
     "STUDIO": "Studio",
     "RESERVED": "All rights reserved"
@@ -21,7 +21,7 @@
     "ABOUT_DESC_2": "Our approach blends deep analytical research with intuitive design to address the complex challenges of modern cities.",
     "LEARN_MORE": "Learn More",
     "EXPERTISE_TITLE": "Areas of Expertise",
-    "EXPERTISE_URBAN": "Urban Design",
+    "EXPERTISE_URBAN": "Urban Planning",
     "EXPERTISE_URBAN_DESC": "We specialize in the holistic development of urban spaces, prioritizing public realm connectivity and sustainable transit integration.",
     "EXPERTISE_HEALTHCARE": "Healthcare Architecture",
     "EXPERTISE_HEALTHCARE_DESC": "Designing cutting-edge, human-centric medical facilities focusing on patient wellbeing and operational efficiency.",
@@ -40,7 +40,7 @@
   "PROJECTS": {
     "TITLE": "Our Portfolio",
     "ALL": "All",
-    "URBAN": "Urban Design",
+    "URBAN": "Urban Planning",
     "HEALTHCARE": "Healthcare",
     "LANDUSE": "Landuse",
     "GIS": "GIS Analysis",
