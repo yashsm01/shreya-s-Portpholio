@@ -47,6 +47,36 @@
     "featured": true
   },
   {
+    "id": "urban-planning-project-1",
+    "title_en": "Urban Planning Project 1",
+    "title_fr": "Projet d'Urbanisme 1",
+    "category": "urban",
+    "categoryLabel_en": "Urban Planning",
+    "categoryLabel_fr": "Urbanisme",
+    "description_en": "Detailed urban planning and strategic growth assessment for the future development framework.",
+    "description_fr": "Planification urbaine détaillée et évaluation de la croissance stratégique pour le cadre de développement futur.",
+    "shortDescription_en": "Strategic urban framework project.",
+    "shortDescription_fr": "Projet de cadre urbain stratégique.",
+    "coverImage": "assets/data/Urban planning/Project_1/Main Header.png",
+    "images": [
+      "assets/data/Urban planning/Project_1/P_1_image_1.png",
+      "assets/data/Urban planning/Project_1/P_1_image_2.png",
+      "assets/data/Urban planning/Project_1/P_1_image_3.png",
+      "assets/data/Urban planning/Project_1/P_1_image_4.png",
+      "assets/data/Urban planning/Project_1/P_1_image_5.png",
+      "assets/data/Urban planning/Project_1/P_1_image_6.png",
+      "assets/data/Urban planning/Project_1/P_1_image_7.png",
+      "assets/data/Urban planning/Project_1/P_1_image_8.png",
+      "assets/data/Urban planning/Project_1/P_1_image_9.png",
+      "assets/data/Urban planning/Project_1/P_1_image_10.png",
+      "assets/data/Urban planning/Project_1/P_1_image_11.png"
+    ],
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
     "id": "urban-revitalization",
     "title_en": "Downtown Urban Revitalization",
     "title_fr": "Revitalisation Urbaine du Centre-Ville",
@@ -169,5 +199,97 @@
     "location_fr": "Bombay",
     "year": 2024,
     "area": "City-wide"
+  },
+  {
+    "id": "urban-planning-project-2",
+    "title_en": "Urban Planning Project 2",
+    "title_fr": "Projet d'Urbanisme 2",
+    "category": "urban",
+    "categoryLabel_en": "Urban Planning",
+    "categoryLabel_fr": "Urbanisme",
+    "description_en": "Advanced urban planning project involving extensive analysis and masterplanning.",
+    "description_fr": "Projet avancé d'urbanisme comprenant une analyse approfondie et un plan directeur.",
+    "shortDescription_en": "Master plan and urban resilience strategy.",
+    "shortDescription_fr": "Plan directeur et stratégie de résilience urbaine.",
+    "coverImage": "assets/data/Urban planning/Project_2/Main Header.png",
+    "images": [
+      "assets/data/Urban planning/Project_2/P_2_image_1.png",
+      "assets/data/Urban planning/Project_2/P_2_image_2.png",
+      "assets/data/Urban planning/Project_2/P_2_image_3.png"
+    ],
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "urban-planning-project-3",
+    "title_en": "Urban Planning Project 3",
+    "title_fr": "Projet d'Urbanisme 3",
+    "category": "urban",
+    "categoryLabel_en": "Urban Planning",
+    "categoryLabel_fr": "Urbanisme",
+    "description_en": "Strategic urban planning and development mapping emphasizing mixed-use zonings and sustainable local infrastructure.",
+    "description_fr": "Planification urbaine stratégique et cartographie du développement mettant l'accent sur les zonages à usage mixte et les infrastructures locales durables.",
+    "shortDescription_en": "Mixed-use sustainable urban growth blueprint.",
+    "shortDescription_fr": "Plan de croissance urbaine durable à usage mixte.",
+    "coverImage": "assets/data/Urban planning/Project_3/Main Header.png",
+    "images": [
+      "assets/data/Urban planning/Project_3/P_3_image_1.png",
+      "assets/data/Urban planning/Project_3/P_3_image_2.png",
+      "assets/data/Urban planning/Project_3/P_3_image_3.png"
+    ],
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "urban-planning-project-4",
+    "title_en": "Urban Planning Project 4",
+    "title_fr": "Projet d'Urbanisme 4",
+    "category": "urban",
+    "categoryLabel_en": "Urban Planning",
+    "categoryLabel_fr": "Urbanisme",
+    "description_en": "Innovative urban development model integrating public realm enhancement and infrastructural upgrades.",
+    "description_fr": "Modèle innovant de développement urbain intégrant l'amélioration de l'espace public et la modernisation des infrastructures.",
+    "shortDescription_en": "Public realm and infrastructural model.",
+    "shortDescription_fr": "Modèle d'espace public et d'infrastructure.",
+    "coverImage": "assets/data/Urban planning/Project_4/Main Header.png",
+    "images": [
+      "assets/data/Urban planning/Project_4/P_4_image_1.png",
+      "assets/data/Urban planning/Project_4/P_4_image_2.png",
+      "assets/data/Urban planning/Project_4/P_4_image_3.png",
+      "assets/data/Urban planning/Project_4/P_4_image_4.png",
+      "assets/data/Urban planning/Project_4/P_4_image_5.png"
+    ],
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "healthcare-project-1",
+    "title_en": "Healthcare Project 1",
+    "title_fr": "Projet de Santé 1",
+    "category": "healthcare",
+    "categoryLabel_en": "Healthcare Architecture",
+    "categoryLabel_fr": "Architecture de Santé",
+    "description_en": "Modern healthcare facility tailored for streamlined patient experience and efficient care delivery.",
+    "description_fr": "Hôpital moderne conçu pour l'expérience et le soin de patients.",
+    "shortDescription_en": "State-of-the-art healthcare facility.",
+    "shortDescription_fr": "Hôpital de pointe.",
+    "coverImage": "assets/data/Health-Care/Project_1/Main Header.png",
+    "images": [
+      "assets/data/Health-Care/Project_1/P_1_image_1.png",
+      "assets/data/Health-Care/Project_1/P_1_image_2.png",
+      "assets/data/Health-Care/Project_1/P_1_image_3.png",
+      "assets/data/Health-Care/Project_1/P_1_image_4.png",
+      "assets/data/Health-Care/Project_1/P_1_image_5.png"
+    ],
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2024,
+    "featured": true
   }
 ]
