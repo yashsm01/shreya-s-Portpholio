@@ -24,7 +24,8 @@ export class FilterBarComponent {
     { id: 'healthcare', label: 'PROJECTS.HEALTHCARE' },
     { id: 'landuse', label: 'PROJECTS.LANDUSE' },
     { id: 'gis', label: 'PROJECTS.GIS' },
-    { id: 'buildings', label: 'PROJECTS.BUILDINGS' }
+    { id: 'buildings', label: 'PROJECTS.BUILDINGS' },
+    { id: 'institution', label: 'PROJECTS.INSTITUTION' }
   ];
 
   setFilter(id: string): void {

@@ -33,6 +33,8 @@
     "EXPERTISE_GIS_DESC": "Utilizing advanced geospatial mapping algorithms to uncover insights for macro-planning.",
     "EXPERTISE_COMMERCIAL": "Residential & Commercial",
     "EXPERTISE_COMMERCIAL_DESC": "Innovative building design delivering modern aesthetics, functionality, and maximum ROI for developments.",
+    "EXPERTISE_INSTITUTION": "Institutional Architecture",
+    "EXPERTISE_INSTITUTION_DESC": "Specialized facilities for governance, sports, and community welfare focused on sustainable civic impact.",
     "FEATURED_PROJECTS": "Featured Projects",
     "VIEW_ALL": "View All Projects",
     "CTA_TITLE": "Ready to build the future?",
@@ -46,7 +48,8 @@
     "HEALTHCARE": "Healthcare",
     "LANDUSE": "Landuse",
     "GIS": "GIS Analysis",
-    "BUILDINGS": "Buildings"
+    "BUILDINGS": "Buildings",
+    "INSTITUTION": "Institutional"
   },
   "PROJECT_DETAILS": {
     "BACK": "Back to Portfolio",

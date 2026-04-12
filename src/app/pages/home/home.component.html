@@ -91,7 +91,7 @@
       </div>
     </div>
 
-    <div class="row align-items-center">
+    <div class="row align-items-center mb-80">
       <div class="col-md-6 order-md-2">
         <app-section-heading [title]="'HOME.EXPERTISE_LANDUSE' | translate" [centered]="false"></app-section-heading>
         <p>{{ 'HOME.EXPERTISE_LANDUSE_DESC' | translate }}</p>
@@ -101,6 +101,19 @@
       <div class="col-md-6 order-md-1">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
           alt="Engagement" class="expertise-img" loading="lazy">
+      </div>
+    </div>
+
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <app-section-heading [title]="'HOME.EXPERTISE_INSTITUTION' | translate" [centered]="false"></app-section-heading>
+        <p>{{ 'HOME.EXPERTISE_INSTITUTION_DESC' | translate }}</p>
+        <a routerLink="/projects" [queryParams]="{filter: 'institution'}" class="btn btn-outline dark mt-4">{{
+          'HOME.LEARN_MORE' | translate }}</a>
+      </div>
+      <div class="col-md-6">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop"
+          alt="Institution Design" class="expertise-img" loading="lazy">
       </div>
     </div>
   </div>

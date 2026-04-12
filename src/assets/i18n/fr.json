@@ -33,6 +33,8 @@
     "EXPERTISE_GIS_DESC": "Utilisation d'algorithmes de cartographie géospatiale avancés pour découvrir des informations exploitables pour la macro-planification.",
     "EXPERTISE_COMMERCIAL": "Résidentiel & Commercial",
     "EXPERTISE_COMMERCIAL_DESC": "Conception de bâtiments innovante offrant une esthétique moderne, une fonctionnalité et un retour sur investissement maximal pour les développements.",
+    "EXPERTISE_INSTITUTION": "Architecture Institutionnelle",
+    "EXPERTISE_INSTITUTION_DESC": "Environnements spécialisés pour l'éducation, l'usage civique et le bien-être communautaire axés sur des infrastructures durables et l'impact socio-culturel.",
     "FEATURED_PROJECTS": "Projets en Vedette",
     "VIEW_ALL": "Voir tous les Projets",
     "CTA_TITLE": "Prêt à construire l'avenir ?",
@@ -46,7 +48,8 @@
     "HEALTHCARE": "Santé",
     "LANDUSE": "Occupation des sols",
     "GIS": "Analyse SIG",
-    "BUILDINGS": "Bâtiments"
+    "BUILDINGS": "Bâtiments",
+    "INSTITUTION": "Institutionnel"
   },
   "PROJECT_DETAILS": {
     "BACK": "Retour au Portefeuille",

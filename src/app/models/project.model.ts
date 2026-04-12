@@ -13,7 +13,7 @@ export interface Project {
   images: string[];
   location_en?: string;
   location_fr?: string;
-  year?: number;
+  year?: number | string;
   area?: string;
   client?: string;
   featured?: boolean;
