@@ -401,5 +401,50 @@
     "location_fr": "Surat, Gujarat",
     "year": 2024,
     "featured": true
+  },
+  {
+    "id": "institution-gsrtc-bharuch",
+    "title_en": "GSRTC Bus Terminal",
+    "title_fr": "Terminal de Bus GSRTC",
+    "category": "institution",
+    "categoryLabel_en": "Institutional Projects",
+    "categoryLabel_fr": "Projets Institutionnels",
+    "description_en": "It was a Development of 14 bus terminals with commercial facilities in Gujarat on DEFOT basis. The GSRTC Bus Terminal project was designed to integrate Bus Terminal-cum-Commercial Facility to create an iconic landmark building with innovative designs.",
+    "description_fr": "Il s'agissait d'un développement de 14 terminaux de bus avec des installations commerciales au Gujarat sur une base DEFOT. Le projet de terminal de bus GSRTC a été conçu pour intégrer un terminal de bus et une installation commerciale afin de créer un bâtiment emblématique phare avec des designs innovants.",
+    "shortDescription_en": "Development of an iconic Bus Terminal-cum-Commercial Facility on a DEFOT basis.",
+    "shortDescription_fr": "Développement d'un terminal de bus emblématique avec des installations commerciales.",
+    "coverImage": "https://images.hinex.store/1775990379936-IP_P3_Main Header.png",
+    "images": [
+      "https://images.hinex.store/1775990379341-IP_P_3_image_1.png"
+    ],
+    "client": "GSRTC",
+    "area": "22,152 sq.m",
+    "location_en": "Bharuch, Gujarat",
+    "location_fr": "Bharuch, Gujarat",
+    "year": "On-going",
+    "featured": true
+  },
+  {
+    "id": "institution-arts-design-institute",
+    "title_en": "Arts and Design Institute",
+    "title_fr": "Institut des Arts et du Design",
+    "category": "institution",
+    "categoryLabel_en": "Institutional Projects",
+    "categoryLabel_fr": "Projets Institutionnels",
+    "description_en": "AIM & OBJECTIVES:\nTo provide an inspirational learning environment and a better place to learn, study, share and exhibit the art work.\n\nSCOPE OF SERVICES:\n• Architectural Design\n• FACADE Design",
+    "description_fr": "BUTH ET OBJECTIFS :\nFournir un environnement d'apprentissage inspirant et un meilleur endroit pour apprendre, étudier, partager et exposer les œuvres d'art.\n\nÉTENDUE DES SERVICES :\n• Conception Architecturale\n• Conception de FAÇADE",
+    "shortDescription_en": "An inspirational learning environment for arts and design.",
+    "shortDescription_fr": "Un environnement d'apprentissage inspirant pour les arts et le design.",
+    "coverImage": "https://images.hinex.store/1775990744314-IP_P4_Main Header.png",
+    "images": [
+      "https://images.hinex.store/1775990743280-IP_P_4_image_1.png",
+      "https://images.hinex.store/1775990743738-IP_P_4_image_2.png"
+    ],
+    "client": "SCET, SURAT",
+    "area": "2,460 Sq.mt.",
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2021,
+    "featured": true
   }
 ]
