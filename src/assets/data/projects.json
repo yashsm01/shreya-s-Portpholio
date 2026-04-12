@@ -446,5 +446,78 @@
     "location_fr": "Surate, Gujarat",
     "year": 2021,
     "featured": true
+  },
+  {
+    "id": "residential-green-group",
+    "title_en": "Green Group Residential Development",
+    "title_fr": "Développement Résidentiel Green Group",
+    "category": "buildings",
+    "categoryLabel_en": "Residential Projects",
+    "categoryLabel_fr": "Projets Résidentiels",
+    "description_en": "AMENITIES:\n• Integrated Wellness Centre\n• Indoor and outdoor sports area\n• Yoga-meditation space and gymnasium\n• Rainwater harvesting system\n• Landscape features like aroma and alluring gardens, camp-fire area and small water bodies\n\nSCOPE OF SERVICES:\n• Architectural Design\n• MEPF Services\n• Site Supervision\n• Legal/liaison work\n• Tender work",
+    "description_fr": "ÉQUIPEMENTS :\n• Centre de bien-être intégré\n• Zone de sports intérieure et extérieure\n• Espace de yoga-méditation et gymnase\n• Système de récupération des eaux de pluie\n• Aménagements paysagers comme des jardins aromatiques et séduisants, zone de feu de camp et petits plans d'eau\n\nÉTENDUE DES SERVICES :\n• Conception Architecturale\n• Services MEPF\n• Supervision de Chantier\n• Travail Juridique/de Liaison\n• Travaux de Soumission",
+    "shortDescription_en": "A holistic residential complex with integrated wellness and extensive landscape features.",
+    "shortDescription_fr": "Un complexe résidentiel holistique avec des installations de bien-être intégrées et d'importants aménagements paysagers.",
+    "coverImage": "https://images.hinex.store/1775991622404-RP_P1_Main Header.png",
+    "images": [
+      "https://images.hinex.store/1775991616855-IP_P1_image_2.png",
+      "https://images.hinex.store/1775991619200-RP_P1_image_1.png",
+      "https://images.hinex.store/1775991619722-RP_P1_image_3.png",
+      "https://images.hinex.store/1775991620436-RP_P1_image_4.png",
+      "https://images.hinex.store/1775991621043-RP_P1_image_5.png",
+      "https://images.hinex.store/1775991621631-RP_P1_image_6.png"
+    ],
+    "client": "Green Group",
+    "area": "65,000 Sq.mt.",
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2020,
+    "featured": true
+  },
+  {
+    "id": "residential-community-housing",
+    "title_en": "Community Housing",
+    "title_fr": "Logement Communautaire",
+    "category": "buildings",
+    "categoryLabel_en": "Residential Projects",
+    "categoryLabel_fr": "Projets Résidentiels",
+    "description_en": "The project aims at providing housing clusters maintaining the hierarchy of open spaces and courts which is the typical characteristics of close gated community with open interactive space for the people.\n\nSCOPE OF SERVICES:\n• Architectural Design\n• Landscape Design\n• Tender work",
+    "description_fr": "Le projet vise à fournir des groupes de logements en maintenant la hiérarchie des espaces ouverts et des cours, ce qui est la caractéristique typique des communautés fermées avec des espaces ouverts interactifs pour les habitants.\n\nÉTENDUE DES SERVICES :\n• Conception Architecturale\n• Aménagement Paysager\n• Travaux de Soumission",
+    "shortDescription_en": "Interactive housing clusters prioritizing open spaces and community courts.",
+    "shortDescription_fr": "Des groupes de logements interactifs privilégiant les espaces ouverts et les cours communautaires.",
+    "coverImage": "https://images.hinex.store/1775991913623-RP_P2_Main Header.png",
+    "images": [
+      "https://images.hinex.store/1775992113772-RP_P2_image_3.png",
+      "https://images.hinex.store/1775991911079-RP_P2_image_1.png",
+      "https://images.hinex.store/1775991912856-RP_P2_image_2.png"
+    ],
+    "client": "Surat Municipal Corporation",
+    "area": "11,460 Sq.mt.",
+    "location_en": "Surat, Gujarat",
+    "location_fr": "Surate, Gujarat",
+    "year": 2022,
+    "featured": true
+  },
+  {
+    "id": "residential-pandya",
+    "title_en": "Pandya Residence",
+    "title_fr": "Résidence Pandya",
+    "category": "buildings",
+    "categoryLabel_en": "Residential Projects",
+    "categoryLabel_fr": "Projets Résidentiels",
+    "description_en": "Architect: Brijesh Bhatha\nWebsite: http://www.groundwork.in",
+    "description_fr": "Architecte : Brijesh Bhatha\nSite web : http://www.groundwork.in",
+    "shortDescription_en": "Modern private residence in Ahmedabad.",
+    "shortDescription_fr": "Résidence privée moderne à Ahmedabad.",
+    "coverImage": "https://images.hinex.store/1775992331209-RP_P3_Main Header.png",
+    "images": [
+      "https://images.hinex.store/1775992333145-RP_P3_image_1.png",
+      "https://images.hinex.store/1775992331869-RP_P3_image_2.png",
+      "https://images.hinex.store/1775992332491-RP_P3_image_3.png"
+    ],
+    "location_en": "Ahmedabad, Gujarat",
+    "location_fr": "Ahmedabad, Gujarat",
+    "year": 2024,
+    "featured": true
   }
 ]
