@@ -246,18 +246,17 @@
 <!-- Featured Projects -->
 <section class="featured-projects bg-light pt-120 pb-120">
   <div class="container">
-    <div class="d-flex justify-content-between align-items-end mb-5">
+    <div class="mb-4">
       <app-section-heading [title]="'HOME.FEATURED_PROJECTS' | translate" [centered]="false"></app-section-heading>
     </div>
 
-    <div class="project-grid">
-      <a routerLink="/projects" class="text-gold see-all-link">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
-      <app-project-card *ngFor="let project of featuredProjects" [project]="project"></app-project-card>
+    <div class="d-flex justify-content-end mb-4">
+      <a routerLink="/projects" class="text-gold see-all-link" style="font-weight: 500; font-size: 16px;">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
     </div>
 
-    <!-- <div class="text-center mt-5">
-      <a routerLink="/projects" class="btn btn-outline dark">{{ 'HOME.VIEW_ALL' | translate }}</a>
-    </div> -->
+    <div class="project-grid">
+      <app-project-card *ngFor="let project of featuredProjects" [project]="project"></app-project-card>
+    </div>
   </div>
 </section>
 
