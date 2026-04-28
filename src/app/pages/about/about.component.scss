@@ -77,6 +77,20 @@
     line-height: 1.6;
     margin-bottom: 30px;
   }
+
+  .bio-image {
+    width: 100%;
+    margin-top: 40px;
+    
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 15px 30px rgba($color-a, 0.08);
+      object-fit: cover;
+      max-height: 400px;
+    }
+  }
 }
 
 // ── RIGHT: DETAILS (Expertise & Affiliations) ────────────────────────
