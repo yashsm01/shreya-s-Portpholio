@@ -10,11 +10,12 @@
 
     <!-- Desktop Navigation -->
       <nav class="nav-links desktop-menu">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'NAV.HOME' | translate }}</a>
-        <a routerLink="/projects" routerLinkActive="active">{{ 'NAV.PORTFOLIO' | translate }}</a>
-        <a routerLink="/publications" routerLinkActive="active">{{ 'NAV.PUBLICATIONS' | translate }}</a>
-        <a routerLink="/achievements" routerLinkActive="active">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
-        <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">{{ 'NAV.HOME' | translate }}</a>
+        <a [routerLink]="['/about']" routerLinkActive="active">{{ 'NAV.ABOUT' | translate }}</a>
+        <a [routerLink]="['/experience']" routerLinkActive="active">{{ 'NAV.EXPERIENCE' | translate }}</a>
+        <a [routerLink]="['/projects']" routerLinkActive="active">{{ 'NAV.PORTFOLIO' | translate }}</a>
+        <a [routerLink]="['/publications']" routerLinkActive="active">{{ 'NAV.PUBLICATIONS' | translate }}</a>
+        <a [routerLink]="['/achievements']" routerLinkActive="active">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
       </nav>
 
     <div class="nav-right">
@@ -33,12 +34,13 @@
   <!-- Mobile Navigation Panel -->
   <div class="mobile-menu-overlay" [ngClass]="{'open': isMenuOpen}">
       <nav class="mobile-nav-links">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">{{ 'NAV.HOME' | translate }}</a>
-        <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PORTFOLIO' | translate }}</a>
-        <a routerLink="/publications" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PUBLICATIONS' | translate }}</a>
-        <a routerLink="/achievements" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
-        <a href="#about" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
-        <a href="#contact" class="btn btn-primary mt-4" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
+        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" (click)="closeMenu()">{{ 'NAV.HOME' | translate }}</a>
+        <a [routerLink]="['/about']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ABOUT' | translate }}</a>
+        <a [routerLink]="['/experience']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.EXPERIENCE' | translate }}</a>
+        <a [routerLink]="['/projects']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PORTFOLIO' | translate }}</a>
+        <a [routerLink]="['/publications']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PUBLICATIONS' | translate }}</a>
+        <a [routerLink]="['/achievements']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
+        <a [routerLink]="['/']" fragment="contact" class="btn btn-primary mt-4" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
       </nav>
   </div>
 </header>

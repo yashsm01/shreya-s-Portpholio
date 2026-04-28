@@ -1,0 +1,215 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+// ── PAGE HEADER ────────────────────────────────────────────────────
+.page-header {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background-color: $color-a;
+
+  .header-content {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .page-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+
+    @include media-down(md) { font-size: 42px; }
+  }
+
+  .separator { color: $color-e; }
+}
+
+// ── PAGE SECTION ───────────────────────────────────────────────────
+.about-page-section {
+  padding: 0; // columns control their own padding
+}
+
+// ── TWO-COLUMN LAYOUT ──────────────────────────────────────────────
+.about-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  align-items: start;
+
+  @include media-down(lg) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── LEFT: scrollable ───────────────────────────────────────────────
+.about-left {
+  padding: 100px 80px 100px 0;
+  border-right: 1px solid rgba($color-a, 0.08);
+
+  @include media-down(lg) {
+    padding: 80px 0 60px;
+    border-right: none;
+    border-bottom: 1px solid rgba($color-a, 0.08);
+  }
+
+  .bio-block {
+    .lead {
+      font-size: 21px;
+      font-weight: 400;
+      color: $color-a;
+      line-height: 1.6;
+      margin-bottom: 22px;
+    }
+
+    p {
+      font-size: 17px;
+      line-height: 1.8;
+      color: rgba($color-c, 0.8);
+      margin-bottom: 18px;
+    }
+  }
+}
+
+// Block label (matches home page "CORE EXPERTISE" heading style)
+.block-label {
+  font-weight: 600;
+  color: $color-a;
+  font-size: 0.85rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: '';
+    height: 1px;
+    flex: 1;
+    background: rgba($color-a, 0.1);
+    margin-left: 20px;
+  }
+}
+
+// Core expertise pill grid — identical to home page
+.expertise-items {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+
+  @include media-down(sm) { grid-template-columns: 1fr; }
+
+  li {
+    padding: 14px 18px;
+    font-size: 0.88rem;
+    color: $color-c;
+    background: rgba($color-white, 0.55);
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+    line-height: 1.4;
+    font-weight: 500;
+
+    &:hover {
+      background: $color-white;
+      border-left-color: $color-e;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transform: translateX(5px);
+    }
+  }
+}
+
+// Affiliations list
+.affiliations-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-size: 15px;
+    color: $color-c;
+    font-weight: 500;
+
+    .dot {
+      width: 7px;
+      height: 7px;
+      background: $color-e;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+  }
+}
+
+// ── RIGHT: sticky panel ────────────────────────────────────────────
+.about-right {
+  padding: 100px 0 100px 80px;
+
+  @include media-down(lg) {
+    padding: 60px 0 80px;
+  }
+}
+
+.sticky-panel {
+  position: sticky;
+  top: 100px; // offset below navbar height
+}
+
+// Technical list items
+.tech-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  .tech-item {
+    padding: 28px 0;
+    border-bottom: 1px solid rgba($color-a, 0.07);
+
+    &:first-child { padding-top: 0; }
+    &:last-child  { border-bottom: none; }
+
+    &:hover .tech-num { color: $color-e; }
+
+    .tech-header {
+      display: flex;
+      align-items: baseline;
+      gap: 16px;
+      margin-bottom: 10px;
+
+      .tech-num {
+        font-family: $font-heading;
+        font-size: 13px;
+        font-weight: 700;
+        color: rgba($color-a, 0.2);
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+        flex-shrink: 0;
+      }
+
+      h5 {
+        font-size: 16px;
+        font-weight: 600;
+        color: $color-a;
+        margin: 0;
+        letter-spacing: 0.3px;
+      }
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba($color-c, 0.65);
+      margin: 0;
+      padding-left: 32px;
+    }
+  }
+}
+
+// ── ANIMATION ──────────────────────────────────────────────────────
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

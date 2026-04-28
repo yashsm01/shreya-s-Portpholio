@@ -41,8 +41,10 @@
       "assets/data/Project_1/P_1_image_3.png"
     ],
     "client": "Surat Urban Development Authority (SUDA)",
-    "location_en": "Surat, Gujarat",
-    "location_fr": "Surate, Gujarat",
+    "location_en": "India",
+    "location_fr": "Inde",
+    "role_en": "GIS Analyst",
+    "role_fr": "Analyste SIG",
     "year": 2024,
     "featured": true
   },

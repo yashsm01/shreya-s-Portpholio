@@ -1,20 +1,92 @@
 [
   {
-    "id": "ach1",
-    "title_en": "Surat Development Authority - Excellence in Urban Planning",
-    "title_fr": "Autorité de développement de Surat - Excellence en urbanisme",
-    "year": 2024,
-    "organization": "SUDA Excellence Awards",
-    "description_en": "Awarded for the Strategic Urban Growth Assessment for Surat 2035.",
-    "description_fr": "Distingué pour l'évaluation stratégique de la croissance urbaine de Surat 2035."
+    "id": "award-1",
+    "category": "awards",
+    "year": 2022,
+    "title_en": "COA National Gold Medal",
+    "title_fr": "Médaille d'Or Nationale COA",
+    "description_en": "Best Thesis & Research (Council of Architecture, India).",
+    "description_fr": "Meilleure Thèse et Recherche (Council of Architecture, Inde)."
   },
   {
-    "id": "ach2",
-    "title_en": "Global Sustainable Cities Design Competition",
-    "title_fr": "Concours mondial de design pour les villes durables",
+    "id": "award-2",
+    "category": "awards",
+    "year": 2021,
+    "title_en": "University Gold Medal",
+    "title_fr": "Médaille d'Or Universitaire",
+    "description_en": "Master of Urban Planning.",
+    "description_fr": "Maîtrise en Urbanisme."
+  },
+  {
+    "id": "impact-1",
+    "category": "impact",
+    "year": 2017,
+    "title_en": "Government Infrastructure",
+    "title_fr": "Infrastructure Gouvernementale",
+    "description_en": "Worked on government and public infrastructure projects including 4 GSRTC bus depots (2016-2017).",
+    "description_fr": "A travaillé sur des projets d'infrastructure gouvernementale et publique, y compris 4 dépôts de bus GSRTC (2016-2017)."
+  },
+  {
+    "id": "impact-2",
+    "category": "impact",
+    "year": 2017,
+    "title_en": "Inclusive Education Campus",
+    "title_fr": "Campus d'Éducation Inclusive",
+    "description_en": "Contributed to inclusive girls education campus design across multiple rural villages in Gujarat.",
+    "description_fr": "A contribué à la conception de campus d'éducation inclusive pour les filles dans plusieurs villages ruraux du Gujarat."
+  },
+  {
+    "id": "impact-3",
+    "category": "impact",
+    "year": 2018,
+    "title_en": "Sardar Sarovar Dam",
+    "title_fr": "Barrage de Sardar Sarovar",
+    "description_en": "Sardar Sarovar Dam public realm development.",
+    "description_fr": "Développement du domaine public du barrage de Sardar Sarovar."
+  },
+  {
+    "id": "impact-4",
+    "category": "impact",
+    "year": 2019,
+    "title_en": "Emergency Healthcare Infrastructure",
+    "title_fr": "Infrastructure de Santé d'Urgence",
+    "description_en": "Delivered emergency healthcare infrastructure with 2,100+ beds during COVID-19.",
+    "description_fr": "A livré des infrastructures de santé d'urgence avec plus de 2 100 lits pendant le COVID-19."
+  },
+  {
+    "id": "impact-5",
+    "category": "impact",
+    "year": 2021,
+    "title_en": "Scalable Urban Planning",
+    "title_fr": "Urbanisme à Grande Échelle",
+    "description_en": "Worked on projects ranging from neighborhood scale planning to 600,000 sq.m developments (2020-2021).",
+    "description_fr": "A travaillé sur des projets allant de la planification à l'échelle du quartier à des développements de 600 000 m² (2020-2021)."
+  },
+  {
+    "id": "impact-6",
+    "category": "impact",
     "year": 2023,
-    "organization": "International Urban Lab",
-    "description_en": "Ranked in the top 5 for the 'Future Community' project proposal.",
-    "description_fr": "Classé dans le top 5 pour la proposition de projet 'Future Community'."
+    "title_en": "Integrated Medical Campus Leadership",
+    "title_fr": "Direction de Campus Médical Intégré",
+    "description_en": "Led the design of a large-scale integrated medical campus including an MBBS college, cancer care hospital, nursing institute, and residential facilities—creating a complete healthcare and education ecosystem (2022-2023).",
+    "description_fr": "A dirigé la conception d'un campus médical intégré à grande échelle comprenant une faculté de médecine, un hôpital de cancérologie, un institut de soins infirmiers et des installations résidentielles — créant un écosystème complet de santé et d'éducation (2022-2023)."
+  },
+  {
+    "id": "lead-1",
+    "category": "leadership",
+    "year": 2024,
+    "title_en": "Urban Plan Program Facilitator",
+    "title_fr": "Facilitateur du Programme Urban Plan",
+    "description_en": "Facilitator – Urban Plan Program, Urban Land Institute BC.",
+    "description_fr": "Facilitateur – Programme Urban Plan, Urban Land Institute BC."
+  },
+  {
+    "id": "lead-2",
+    "category": "leadership",
+    "year": 2024,
+    "title_en": "Multidisciplinary Coordination",
+    "title_fr": "Coordination Multidisciplinaire",
+    "description_en": "Led multidisciplinary coordination across planning, engineering, and design teams.",
+    "description_fr": "A dirigé la coordination multidisciplinaire entre les équipes de planification, d'ingénierie et de conception."
   }
 ]

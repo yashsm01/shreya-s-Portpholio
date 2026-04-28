@@ -18,4 +18,6 @@ export class ProjectCardComponent {
   get title() { return this.translate.currentLang === 'fr' ? this.project.title_fr : this.project.title_en; }
   get categoryLabel() { return this.translate.currentLang === 'fr' ? this.project.categoryLabel_fr : this.project.categoryLabel_en; }
   get shortDescription() { return this.translate.currentLang === 'fr' ? this.project.shortDescription_fr : this.project.shortDescription_en; }
+  get location() { return this.translate.currentLang === 'fr' ? this.project.location_fr : this.project.location_en; }
+  get role() { return this.translate.currentLang === 'fr' ? this.project.role_fr : this.project.role_en; }
 }

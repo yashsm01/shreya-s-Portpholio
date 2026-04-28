@@ -27,7 +27,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit() {
     this.projectService.getFeatured().subscribe(projects => {
-      this.featuredProjects = projects;
+      this.featuredProjects = projects.slice(0, 6);
     });
   }
 }

@@ -1,0 +1,276 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+// ── PAGE HEADER ──────────────────────────────────────────────────────
+.page-header {
+  padding-top: 160px;
+  padding-bottom: 100px;
+  background-color: $color-a;
+
+  .page-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    animation: fadeInUp 0.8s ease forwards;
+
+    @include media-down(md) { font-size: 42px; }
+  }
+
+  .separator { color: $color-e; }
+}
+
+// ── FULL-BLEED TWO-COLUMN SECTION ────────────────────────────────────
+.exp-page {
+  background-color: $color-b;
+}
+
+.exp-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  min-height: 100vh;
+
+  @include media-down(lg) {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+}
+
+// Shared inner padding for both columns
+.exp-inner {
+  padding: 100px 60px 120px;
+
+  @include media-down(xl) { padding: 80px 40px 100px; }
+  @include media-down(md) { padding: 60px 24px 80px; }
+}
+
+// ── LEFT: off-white experience column ────────────────────────────────
+.exp-left {
+  background-color: $color-b; // warm off-white
+  border-right: 1px solid rgba($color-a, 0.08);
+
+  @include media-down(lg) {
+    border-right: none;
+    border-bottom: 1px solid rgba($color-a, 0.08);
+  }
+}
+
+// ── TIMELINE ─────────────────────────────────────────────────────────
+.timeline { position: relative; }
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  gap: 28px;
+}
+
+.timeline-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 5px;
+
+  .marker-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: $color-e;
+    box-shadow: 0 0 0 5px rgba($color-e, 0.12);
+    flex-shrink: 0;
+    z-index: 1;
+  }
+
+  .marker-line {
+    width: 1px;
+    flex: 1;
+    background: linear-gradient(to bottom, rgba($color-e, 0.25), rgba($color-a, 0.05));
+    margin-top: 10px;
+    min-height: 40px;
+  }
+}
+
+.timeline-content {
+  padding-bottom: 60px;
+
+  .period {
+    font-size: 11px;
+    font-weight: 700;
+    color: $color-e;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    display: block;
+    margin-bottom: 12px;
+  }
+
+  .job-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: $color-a;
+    margin-bottom: 4px;
+    line-height: 1.2;
+  }
+
+  .company {
+    font-size: 12px;
+    font-weight: 600;
+    color: rgba($color-c, 0.45);
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 22px;
+
+    .tag {
+      font-size: 11px;
+      font-weight: 600;
+      color: $color-a;
+      background: rgba($color-a, 0.06);
+      padding: 5px 14px;
+      border-radius: 50px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+  }
+
+  .project-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      font-size: 15px;
+      color: rgba($color-c, 0.7);
+      padding-left: 20px;
+      position: relative;
+      line-height: 1.5;
+
+      &::before {
+        content: '—';
+        position: absolute;
+        left: 0;
+        color: $color-e;
+        font-weight: 700;
+      }
+    }
+  }
+}
+
+// ── RIGHT: education column (sticky) ────────────────────────────
+.exp-right {
+  background-color: $color-d; // warm beige
+
+  .exp-inner {
+    position: sticky;
+    top: 80px;
+
+    @include media-down(lg) {
+      position: static;
+    }
+  }
+
+  .edu-heading {
+    font-size: 32px;
+    font-weight: 700;
+    color: $color-a;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    @include media-down(md) { font-size: 26px; }
+  }
+
+  .heading-line {
+    width: 50px;
+    height: 3px;
+    background-color: $color-e;
+    border-radius: 2px;
+  }
+}
+
+// ── EDUCATION LIST ────────────────────────────────────────────────────
+.edu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.edu-item {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid rgba($color-a, 0.08);
+
+  &:first-child { padding-top: 0; }
+  &:last-child  { border-bottom: none; padding-bottom: 0; }
+
+  &:hover .edu-period { color: $color-e; }
+
+  .edu-period {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgba($color-a, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding-top: 3px;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .edu-body {
+    h4 {
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-a;
+      margin-bottom: 5px;
+      line-height: 1.45;
+    }
+
+    .edu-inst {
+      font-size: 12px;
+      color: rgba($color-c, 0.6);
+      margin-bottom: 12px;
+      font-weight: 500;
+      letter-spacing: 0.3px;
+    }
+
+    .edu-medals {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+
+      .medal {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        color: $color-a;
+        background: rgba($color-e, 0.15);
+        border: 1px solid rgba($color-e, 0.3);
+        padding: 4px 10px;
+        border-radius: 4px;
+        width: fit-content;
+
+        svg { 
+          flex-shrink: 0;
+          color: $color-e;
+        }
+      }
+    }
+  }
+}
+
+// ── ANIMATION ─────────────────────────────────────────────────────────
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}

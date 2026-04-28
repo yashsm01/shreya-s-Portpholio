@@ -3,7 +3,11 @@
     <img [src]="project.coverImage" [alt]="title" class="card-image" loading="lazy">
     <div class="card-overlay">
       <div class="overlay-content">
-        <span class="category">{{ categoryLabel }}</span>
+        <span class="category">
+          {{ categoryLabel }} 
+          <ng-container *ngIf="location"> | {{ location }}</ng-container> 
+          <ng-container *ngIf="role"> | {{ role }}</ng-container>
+        </span>
         <h3>{{ title }}</h3>
         <p *ngIf="shortDescription">{{ shortDescription }}</p>
         <span class="btn-view">{{ 'PROJECT_DETAILS.OVERVIEW' | translate }}</span>

@@ -31,6 +31,11 @@ export class AchievementsComponent implements OnInit {
   public translate = inject(TranslateService);
 
   achievements: Achievement[] = [];
+  categories = [
+    { id: 'awards', label: 'HOME.ACHIEVEMENTS_AWARDS' },
+    { id: 'impact', label: 'HOME.ACHIEVEMENTS_IMPACT' },
+    { id: 'leadership', label: 'HOME.ACHIEVEMENTS_LEADERSHIP' }
+  ];
   currentLang: string = 'en';
 
   ngOnInit() {
@@ -40,9 +45,14 @@ export class AchievementsComponent implements OnInit {
     });
 
     this.projectService.getAchievements().subscribe(data => {
-      // Sort by year descending
-      this.achievements = data.sort((a, b) => b.year - a.year);
+      this.achievements = data;
     });
+  }
+
+  getAchievementsByCategory(categoryId: string): Achievement[] {
+    return this.achievements
+      .filter(a => a.category === categoryId)
+      .sort((a, b) => (b.year as any) - (a.year as any));
   }
 
   getTranslateKey(achievement: Achievement, key: 'title' | 'description'): string {

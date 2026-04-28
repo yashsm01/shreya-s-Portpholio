@@ -20,17 +20,36 @@
       <p class="hero-desc">
         {{ 'HOME.HERO_SUBTITLE' | translate }}
       </p>
+      <p class="hero-subline">
+        {{ 'HOME.HERO_SUBLINE' | translate }}
+      </p>
       <div class="hero-actions">
         <a href="#about" class="btn btn-outline">{{ 'HOME.LEARN_MORE' | translate }}</a>
         <div class="hero-socials">
           <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
           </a>
           <a href="https://www.instagram.com/srushti_surti_modi" target="_blank" aria-label="Instagram">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
           </a>
           <a href="https://behance.net" target="_blank" aria-label="Behance">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5"/><path d="M3 12l4.5 0"/><path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1"/><path d="M16 6l3 0"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+              <path d="M3 12l4.5 0" />
+              <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+              <path d="M16 6l3 0" />
+            </svg>
           </a>
         </div>
       </div>
@@ -50,12 +69,51 @@
         <p>
           {{ 'HOME.ABOUT_DESC_2' | translate }}
         </p>
-        <a routerLink="/projects" class="btn btn-primary mt-4">{{ 'HOME.EXPLORE_WORK' | translate }}</a>
+        <p>
+          {{ 'HOME.ABOUT_DESC_3' | translate }}
+        </p>
+
+        <div class="core-expertise-list mt-4 mb-4">
+          <h4 class="mb-3">{{ 'HOME.CORE_EXPERTISE_TITLE' | translate }}</h4>
+          <ul class="expertise-items">
+            <li>{{ 'HOME.CORE_EXPERTISE_1' | translate }}</li>
+            <li>{{ 'HOME.CORE_EXPERTISE_2' | translate }}</li>
+            <li>{{ 'HOME.CORE_EXPERTISE_3' | translate }}</li>
+            <li>{{ 'HOME.CORE_EXPERTISE_4' | translate }}</li>
+            <li>
+              <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="expertise-link">
+                {{ 'HOME.CORE_EXPERTISE_5' | translate }}
+              </a>
+            </li>
+            <li>{{ 'HOME.CORE_EXPERTISE_6' | translate }}</li>
+          </ul>
+        </div>
+
+        <a routerLink="/projects" class="btn btn-primary mt-2">{{ 'HOME.EXPLORE_WORK' | translate }}</a>
       </div>
       <div class="about-image">
         <div class="image-wrapper">
           <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2071&auto=format&fit=crop"
             alt="Srushti Modi collaborative planning" loading="lazy">
+        </div>
+
+        <!-- Professional Affiliations -->
+        <div id="affiliations" class="affiliations-box mt-4">
+          <h5 class="affiliations-title">{{ 'HOME.AFFILIATIONS_TITLE' | translate }}</h5>
+          <ul class="affiliations-list">
+            <li>
+              <span class="dot"></span>
+              {{ 'HOME.AFFILIATIONS_1' | translate }}
+            </li>
+            <li>
+              <span class="dot"></span>
+              {{ 'HOME.AFFILIATIONS_2' | translate }}
+            </li>
+            <li>
+              <span class="dot"></span>
+              {{ 'HOME.AFFILIATIONS_3' | translate }}
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -63,55 +121,121 @@
 </section>
 
 <!-- Expertise Areas (Alternating Sections) -->
-<section class="expertise-area pt-120">
+<section id="expertise" class="expertise-area pt-120">
   <div class="container">
     <div class="row align-items-center mb-80">
-      <div class="col-md-6 order-md-2">
-        <app-section-heading [title]="'HOME.EXPERTISE_URBAN' | translate" [centered]="false"></app-section-heading>
-        <p>{{ 'HOME.EXPERTISE_URBAN_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}" class="btn btn-outline dark mt-4">{{
-          'HOME.LEARN_MORE' | translate }}</a>
+      <div class="col-lg-5 col-md-6 order-md-2">
+        <div class="expertise-header">
+          <app-section-heading [title]="'HOME.EXPERTISE_URBAN' | translate" [centered]="false"></app-section-heading>
+          <a routerLink="/projects" [queryParams]="{filter: 'urban-design'}" class="expertise-link-arrow"
+            aria-label="View Projects">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <p class="expertise-intro">{{ 'HOME.EXPERTISE_URBAN_DESC' | translate }}</p>
+
+        <ul class="expertise-details-list">
+          <li>{{ 'HOME.EXPERTISE_URBAN_LIST_1' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_URBAN_LIST_2' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_URBAN_LIST_3' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_URBAN_LIST_4' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_URBAN_LIST_5' | translate }}</li>
+        </ul>
       </div>
-      <div class="col-md-6 order-md-1">
+      <div class="col-lg-7 col-md-6 order-md-1">
         <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?q=80&w=2070&auto=format&fit=crop"
           alt="Planning" class="expertise-img" loading="lazy">
       </div>
     </div>
 
     <div class="row align-items-center mb-80">
-      <div class="col-md-6">
-        <app-section-heading [title]="'HOME.EXPERTISE_HEALTHCARE' | translate" [centered]="false"></app-section-heading>
-        <p>{{ 'HOME.EXPERTISE_HEALTHCARE_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="btn btn-outline dark mt-4">{{
-          'HOME.LEARN_MORE' | translate }}</a>
+      <div class="col-lg-5 col-md-6">
+        <div class="expertise-header">
+          <app-section-heading [title]="'HOME.EXPERTISE_HEALTHCARE' | translate"
+            [centered]="false"></app-section-heading>
+          <a routerLink="/projects" [queryParams]="{filter: 'healthcare'}" class="expertise-link-arrow"
+            aria-label="View Projects">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <p class="expertise-intro">{{ 'HOME.EXPERTISE_HEALTHCARE_DESC' | translate }}</p>
+
+        <ul class="expertise-details-list">
+          <li>{{ 'HOME.EXPERTISE_HEALTHCARE_LIST_1' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_HEALTHCARE_LIST_2' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_HEALTHCARE_LIST_3' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_HEALTHCARE_LIST_4' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_HEALTHCARE_LIST_5' | translate }}</li>
+        </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-7 col-md-6">
         <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop"
           alt="Design" class="expertise-img" loading="lazy">
       </div>
     </div>
 
     <div class="row align-items-center mb-80">
-      <div class="col-md-6 order-md-2">
-        <app-section-heading [title]="'HOME.EXPERTISE_LANDUSE' | translate" [centered]="false"></app-section-heading>
-        <p>{{ 'HOME.EXPERTISE_LANDUSE_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="btn btn-outline dark mt-4">{{
-          'HOME.LEARN_MORE' | translate }}</a>
+      <div class="col-lg-5 col-md-6 order-md-2">
+        <div class="expertise-header">
+          <app-section-heading [title]="'HOME.EXPERTISE_LANDUSE' | translate" [centered]="false"></app-section-heading>
+          <a routerLink="/projects" [queryParams]="{filter: 'landuse'}" class="expertise-link-arrow"
+            aria-label="View Projects">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <p class="expertise-intro">{{ 'HOME.EXPERTISE_LANDUSE_DESC' | translate }}</p>
+
+        <ul class="expertise-details-list">
+          <li>{{ 'HOME.EXPERTISE_LANDUSE_LIST_1' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_LANDUSE_LIST_2' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_LANDUSE_LIST_3' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_LANDUSE_LIST_4' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_LANDUSE_LIST_5' | translate }}</li>
+        </ul>
       </div>
-      <div class="col-md-6 order-md-1">
+      <div class="col-lg-7 col-md-6 order-md-1">
         <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop"
           alt="Engagement" class="expertise-img" loading="lazy">
       </div>
     </div>
 
     <div class="row align-items-center">
-      <div class="col-md-6">
-        <app-section-heading [title]="'HOME.EXPERTISE_INSTITUTION' | translate" [centered]="false"></app-section-heading>
-        <p>{{ 'HOME.EXPERTISE_INSTITUTION_DESC' | translate }}</p>
-        <a routerLink="/projects" [queryParams]="{filter: 'institution'}" class="btn btn-outline dark mt-4">{{
-          'HOME.LEARN_MORE' | translate }}</a>
+      <div class="col-lg-5 col-md-6">
+        <div class="expertise-header">
+          <app-section-heading [title]="'HOME.EXPERTISE_INSTITUTION' | translate"
+            [centered]="false"></app-section-heading>
+          <a routerLink="/projects" [queryParams]="{filter: 'institution'}" class="expertise-link-arrow"
+            aria-label="View Projects">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+        <p class="expertise-intro">{{ 'HOME.EXPERTISE_INSTITUTION_DESC' | translate }}</p>
+
+        <ul class="expertise-details-list">
+          <li>{{ 'HOME.EXPERTISE_INSTITUTION_LIST_1' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_INSTITUTION_LIST_2' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_INSTITUTION_LIST_3' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_INSTITUTION_LIST_4' | translate }}</li>
+          <li>{{ 'HOME.EXPERTISE_INSTITUTION_LIST_5' | translate }}</li>
+        </ul>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-7 col-md-6">
         <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=2070&auto=format&fit=crop"
           alt="Institution Design" class="expertise-img" loading="lazy">
       </div>
@@ -124,12 +248,16 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-end mb-5">
       <app-section-heading [title]="'HOME.FEATURED_PROJECTS' | translate" [centered]="false"></app-section-heading>
-      <a routerLink="/projects" class="text-gold see-all-link">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
     </div>
 
     <div class="project-grid">
+      <a routerLink="/projects" class="text-gold see-all-link">{{ 'HOME.VIEW_ALL' | translate }} &rarr;</a>
       <app-project-card *ngFor="let project of featuredProjects" [project]="project"></app-project-card>
     </div>
+
+    <!-- <div class="text-center mt-5">
+      <a routerLink="/projects" class="btn btn-outline dark">{{ 'HOME.VIEW_ALL' | translate }}</a>
+    </div> -->
   </div>
 </section>
 

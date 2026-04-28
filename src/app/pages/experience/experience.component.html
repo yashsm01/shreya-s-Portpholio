@@ -1,0 +1,71 @@
+<!-- Page Header -->
+<div class="page-header bg-dark">
+  <div class="container">
+    <h1 class="page-title">Professional Experience.</h1>
+    <div class="separator">
+      <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="currentColor" stroke-width="2"/>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- Main Content: Full-bleed two-column layout -->
+<section class="exp-page">
+  <div class="exp-layout">
+
+    <!-- LEFT: Professional Experience (warm off-white) -->
+    <div class="exp-left">
+      <div class="exp-inner">
+        <app-section-heading [title]="'Professional Experience'" [centered]="false"></app-section-heading>
+
+        <div class="timeline mt-5">
+          <div class="timeline-item" *ngFor="let job of jobs; let i = index">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line" *ngIf="i < jobs.length - 1"></div>
+            </div>
+            <div class="timeline-content">
+              <span class="period">{{ job.period }}</span>
+              <h3 class="job-title">{{ job.title }}</h3>
+              <p class="company">{{ job.company }}</p>
+              <div class="tags" *ngIf="job.tags.length > 0">
+                <span class="tag" *ngFor="let tag of job.tags">{{ tag }}</span>
+              </div>
+              <ul class="project-list">
+                <li *ngFor="let project of job.projects">{{ project }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT: Education & Certifications (Warm Beige sticky) -->
+    <div class="exp-right">
+      <div class="exp-inner">
+        <h2 class="edu-heading">Education &<br>Certifications</h2>
+        <div class="heading-line"></div>
+
+        <div class="edu-list mt-5">
+          <div class="edu-item" *ngFor="let edu of education">
+            <div class="edu-period">{{ edu.period }}</div>
+            <div class="edu-body">
+              <h4>{{ edu.degree }}</h4>
+              <p class="edu-inst">{{ edu.institution }}</p>
+              <div class="edu-medals" *ngIf="edu.notes">
+                <span class="medal" *ngFor="let note of edu.notes">
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                  {{ note }}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

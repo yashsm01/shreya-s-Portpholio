@@ -12,22 +12,19 @@
 
 <section class="bg-light pt-60 pb-120">
   <div class="container">
-    <div class="project-grid mt-5" [@listAnimation]="achievements.length">
-      <div *ngFor="let ach of achievements" class="info-card">
-        <div class="card-inner">
-          <div class="card-year">{{ ach.year }}</div>
-          <div class="card-content">
-            <span class="category">{{ ach.organization }}</span>
-            <h3 class="card-title">{{ getTranslateKey(ach, 'title') }}</h3>
-            <p class="card-description">{{ getTranslateKey(ach, 'description') }}</p>
-            <a *ngIf="ach.link" [href]="ach.link" target="_blank" class="btn-view">
-              {{ 'ACHIEVEMENTS.VIEW_MORE' | translate }}
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ms-1">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
-            </a>
+    <div *ngFor="let category of categories" class="achievement-category-group mb-5">
+      <div class="category-header mt-5">
+        <app-section-heading [title]="category.label | translate" [centered]="false"></app-section-heading>
+      </div>
+
+      <div class="project-grid mt-4" [@listAnimation]="getAchievementsByCategory(category.id).length">
+        <div *ngFor="let ach of getAchievementsByCategory(category.id)" class="info-card">
+          <div class="card-inner">
+            <div class="card-year">{{ ach.year }}</div>
+            <div class="card-content">
+              <h3 class="card-title">{{ getTranslateKey(ach, 'title') }}</h3>
+              <p class="card-description">{{ getTranslateKey(ach, 'description') }}</p>
+            </div>
           </div>
         </div>
       </div>
