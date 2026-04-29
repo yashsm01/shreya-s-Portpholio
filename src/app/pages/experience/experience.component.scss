@@ -94,7 +94,7 @@
   padding-bottom: 60px;
 
   .period {
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 700;
     color: $color-e;
     text-transform: uppercase;
@@ -112,9 +112,9 @@
   }
 
   .company {
-    font-size: 12px;
+    font-size: 15px;
     font-weight: 600;
-    color: rgba($color-c, 0.45);
+    color: rgba($color-c, 0.55);
     margin-bottom: 18px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -127,7 +127,7 @@
     margin-bottom: 22px;
 
     .tag {
-      font-size: 11px;
+      font-size: 13px;
       font-weight: 600;
       color: $color-a;
       background: rgba($color-a, 0.06);
@@ -147,8 +147,8 @@
     gap: 10px;
 
     li {
-      font-size: 15px;
-      color: rgba($color-c, 0.7);
+      font-size: 16px;
+      color: rgba($color-c, 0.75);
       padding-left: 20px;
       position: relative;
       line-height: 1.5;
@@ -178,13 +178,15 @@
   }
 
   .edu-heading {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     color: $color-a;
-    line-height: 1.2;
+    line-height: 1.1;
     margin-bottom: 20px;
 
-    @include media-down(md) { font-size: 26px; }
+    @media (min-width: 768px) {
+      font-size: 51px;
+    }
   }
 
   .heading-line {
@@ -203,7 +205,7 @@
 
 .edu-item {
   display: grid;
-  grid-template-columns: 105px 1fr;
+  grid-template-columns: 120px 1fr;
   gap: 20px;
   padding: 26px 0;
   border-bottom: 1px solid rgba($color-a, 0.08);
@@ -214,7 +216,7 @@
   &:hover .edu-period { color: $color-e; }
 
   .edu-period {
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 700;
     color: rgba($color-a, 0.5);
     text-transform: uppercase;
@@ -227,16 +229,16 @@
 
   .edu-body {
     h4 {
-      font-size: 14px;
-      font-weight: 600;
+      font-size: 18px;
+      font-weight: 700;
       color: $color-a;
       margin-bottom: 5px;
       line-height: 1.45;
     }
 
     .edu-inst {
-      font-size: 12px;
-      color: rgba($color-c, 0.6);
+      font-size: 16px;
+      color: rgba($color-c, 0.7);
       margin-bottom: 12px;
       font-weight: 500;
       letter-spacing: 0.3px;
@@ -251,7 +253,7 @@
         display: inline-flex;
         align-items: center;
         gap: 6px;
-        font-size: 11px;
+        font-size: 14px;
         font-weight: 600;
         color: $color-a;
         background: rgba($color-e, 0.15);

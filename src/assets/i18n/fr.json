@@ -4,7 +4,7 @@
     "ABOUT": "À Propos",
     "AFFILIATIONS": "Affiliations et Licences",
     "EXPERIENCE": "Expérience Professionnelle",
-    "PORTFOLIO": "Portfolio",
+    "PORTFOLIO": "Projets",
     "PUBLICATIONS": "Publications",
     "ACHIEVEMENTS": "Réalisations",
     "CONTACT": "Contact"
@@ -80,7 +80,7 @@
     "CONTACT_TODAY": "Contactez-nous Aujourd'hui"
   },
   "PROJECTS": {
-    "TITLE": "Notre Portefeuille",
+    "TITLE": "Projets",
     "ALL": "Tous",
     "URBAN": "Urbanisme",
     "HEALTHCARE": "Santé",
