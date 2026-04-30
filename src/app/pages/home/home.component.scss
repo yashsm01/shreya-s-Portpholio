@@ -16,9 +16,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../../../assets/home_page.png');
+    background-image: url('http://images.hinex.store/1777566470519-home_page.png');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     z-index: 1;
 
     .overlay {
