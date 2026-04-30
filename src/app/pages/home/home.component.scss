@@ -42,10 +42,28 @@
     max-width: 800px;
 
     .hero-title {
+      position: relative;
       font-size: 48px;
       line-height: 1.2;
       margin-bottom: 20px;
       color: #fff7e6;
+      display: inline-block; // For proper positioning of the glow
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        width: 110%;
+        height: 120%;
+        background: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 50%),
+                    linear-gradient(115deg, transparent 40%, rgba(255, 255, 255, 0.3) 48%, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0.3) 52%, transparent 60%);
+        filter: blur(25px);
+        z-index: -1;
+        pointer-events: none;
+        opacity: 0.7;
+        animation: glareShift 12s infinite alternate ease-in-out;
+      }
 
       @include media-up(md) {
         font-size: 64px;
@@ -509,4 +527,10 @@
     font-size: 42px;
     color: $color-white;
   }
+}
+
+@keyframes glareShift {
+  0% { transform: scale(1) translate(0, 0) rotate(0deg); opacity: 0.5; }
+  50% { transform: scale(1.1) translate(15px, -10px) rotate(2deg); opacity: 0.8; }
+  100% { transform: scale(1) translate(-10px, 5px) rotate(-1deg); opacity: 0.5; }
 }
