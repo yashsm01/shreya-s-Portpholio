@@ -116,5 +116,21 @@
     "TECHNICAL_DESIGN_DESC": "AutoCAD, Revit, SketchUp, 3ds Max",
     "TECHNICAL_VISUAL_DESC": "Adobe Photoshop, Illustrator, InDesign, planches de présentation, diagrammes, composition de mise en page",
     "TECHNICAL_MANAGEMENT_DESC": "Microsoft 365 (Excel, Word, PowerPoint), MS Project, Asana, Google Workspace"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Expérience Professionnelle",
+    "EDUCATION_TITLE": "Éducation et Certifications",
+    "JOB_1_TITLE": "Pratique de Planification et de Design",
+    "JOB_2_TITLE": "Urbaniste et Analyste SIG",
+    "JOB_3_TITLE": "Architecte",
+    "JOB_4_TITLE": "Stagiaire en Architecture",
+    "JOB_1_TAG_1": "Basé à Vancouver",
+    "EDU_1_DEGREE": "Baccalauréat en Architecture et Planification",
+    "EDU_2_DEGREE": "Maîtrise en Planification Urbaine et Régionale",
+    "EDU_3_DEGREE": "Fondamentaux de la Gestion de Projet",
+    "EDU_4_DEGREE": "Certificat en Planification et Développement de l'Utilisation des Sols",
+    "EDU_5_DEGREE": "Certificat Supérieur – Systèmes d'Information Géographique (SIG)",
+    "EDU_NOTE_1": "Médaille d'Or Nationale du COA (Thèse)",
+    "EDU_NOTE_2": "Médaille de l'Université"
   }
 }

@@ -81,6 +81,22 @@
 
 // ── LEFT: BIOGRAPHY ──────────────────────────────────────────────────
 .about-bio {
+  position: relative;
+
+  .decorative-blob {
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle, rgba($color-e, 0.15) 0%, rgba($color-e, 0) 70%);
+    filter: blur(35px);
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+    animation: pulseBlob 8s infinite alternate ease-in-out;
+  }
+
   .about-heading {
     font-size: 42px;
     font-weight: 700;
@@ -114,6 +130,8 @@
     color: $color-a;
     line-height: 1.6;
     margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 2px solid rgba($color-e, 0.5);
   }
 
   .bio-image {
@@ -336,6 +354,11 @@
       }
     }
   }
+}
+
+@keyframes pulseBlob {
+  0% { transform: scale(1) translate(0, 0); opacity: 0.5; }
+  100% { transform: scale(1.2) translate(10px, 10px); opacity: 0.8; }
 }
 
 // ── ANIMATION ─────────────────────────────────────────────────────────

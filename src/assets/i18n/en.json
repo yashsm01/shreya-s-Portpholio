@@ -121,5 +121,21 @@
     "TECHNICAL_DESIGN_DESC": "AutoCAD, Revit, SketchUp, 3ds Max",
     "TECHNICAL_VISUAL_DESC": "Adobe Photoshop, Illustrator, InDesign, presentation boards, diagrams, layout composition",
     "TECHNICAL_MANAGEMENT_DESC": "Microsoft 365 (Excel, Word, PowerPoint), MS Project, Asana, Google Workspace"
+  },
+  "EXPERIENCE": {
+    "TITLE": "Professional Experience",
+    "EDUCATION_TITLE": "Education & Certifications",
+    "JOB_1_TITLE": "Planning & Design Practice",
+    "JOB_2_TITLE": "Urban Planner & GIS Analyst",
+    "JOB_3_TITLE": "Architect",
+    "JOB_4_TITLE": "Architectural Intern",
+    "JOB_1_TAG_1": "Vancouver-based",
+    "EDU_1_DEGREE": "Bachelor of Architecture & Planning",
+    "EDU_2_DEGREE": "Master of Urban & Regional Planning",
+    "EDU_3_DEGREE": "Project Management Foundations",
+    "EDU_4_DEGREE": "Land Use Planning & Development Certificate",
+    "EDU_5_DEGREE": "Advanced Certificate – Geographic Information Systems (GIS)",
+    "EDU_NOTE_1": "COA National Gold Medal (Thesis)",
+    "EDU_NOTE_2": "University Medal"
   }
 }
