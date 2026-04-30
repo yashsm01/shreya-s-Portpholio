@@ -1,11 +1,18 @@
 <div class="page-header bg-dark">
   <div class="container">
-    <div class="header-content">
-      <h1 class="page-title">{{ 'ABOUT_PAGE.TITLE' | translate }}.</h1>
-      <div class="separator">
-        <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z" stroke="currentColor" stroke-width="2"/>
-        </svg>
+    <div class="header-flex">
+      <div class="header-text">
+        <h1 class="page-title">{{ 'ABOUT_PAGE.TITLE' | translate }}.</h1>
+        <div class="separator">
+          <svg width="68" height="12" viewBox="0 -1 68 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M0 5H55M55 5C55 7.76142 57.2386 10 60 10C62.7614 10 65 7.76142 65 5C65 2.23858 62.7614 0 60 0C57.2386 0 55 2.23858 55 5Z"
+              stroke="currentColor" stroke-width="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="profile-circle">
+        <img src="http://images.hinex.store/1777566029815-1748125804150.jpeg" alt="Srushti Modi">
       </div>
     </div>
   </div>
@@ -14,13 +21,13 @@
 <section class="about-page-section">
   <div class="container">
     <div class="about-grid">
-      
+
       <!-- LEFT: Biography -->
       <div class="about-bio">
         <!-- We use the raw English text to ensure it exactly matches the requested 'About The Practice.' if translate key fails -->
         <h2 class="about-heading">About The Practice.</h2>
         <div class="heading-line"></div>
-        
+
         <p class="lead">{{ 'HOME.ABOUT_DESC_1' | translate }}</p>
         <p>{{ 'HOME.ABOUT_DESC_2' | translate }}</p>
         <p>{{ 'HOME.ABOUT_DESC_3' | translate }}</p>
@@ -32,7 +39,7 @@
 
       <!-- RIGHT: Core Expertise & Affiliations -->
       <div class="about-details">
-        
+
         <div class="detail-block">
           <h4 class="block-label">{{ 'HOME.CORE_EXPERTISE_TITLE' | translate }}</h4>
           <ul class="expertise-items">
@@ -52,6 +59,56 @@
             <li><span class="dot"></span>{{ 'HOME.AFFILIATIONS_2' | translate }}</li>
             <li><span class="dot"></span>{{ 'HOME.AFFILIATIONS_3' | translate }}</li>
           </ul>
+        </div>
+
+        <div class="detail-block mt-5">
+          <h4 class="block-label">Connect With Me</h4>
+          <div class="social-connect-grid mt-4">
+            <a href="https://wa.me/12368686649" target="_blank" class="connect-card whatsapp">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-7.6 8.38 8.38 0 0 1 3.8.9L22 4l-1.5 6.5Z" />
+                </svg>
+              </div>
+              <span class="label">WhatsApp</span>
+            </a>
+            <a href="https://www.linkedin.com/in/srushtimodi" target="_blank" class="connect-card linkedin">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+              </div>
+              <span class="label">LinkedIn</span>
+            </a>
+            <a href="https://www.instagram.com/srushti_surti_modi" target="_blank" class="connect-card instagram">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </div>
+              <span class="label">Instagram</span>
+            </a>
+            <a href="https://behance.net" target="_blank" class="connect-card behance">
+              <div class="icon-wrap">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 18v-12h4.5a3 3 0 0 1 0 6a3 3 0 0 1 0 6h-4.5" />
+                  <path d="M3 12l4.5 0" />
+                  <path d="M14 13h7a3.5 3.5 0 0 0 -7 0v2a3.5 3.5 0 0 0 6.64 1" />
+                  <path d="M16 6l3 0" />
+                </svg>
+              </div>
+              <span class="label">Behance</span>
+            </a>
+          </div>
         </div>
 
       </div>

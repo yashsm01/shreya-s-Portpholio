@@ -7,8 +7,40 @@
   padding-bottom: 100px;
   background-color: $color-a;
 
-  .header-content {
-    max-width: 800px;
+  .header-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+
+    @include media-down(md) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      gap: 30px;
+    }
+  }
+
+  .profile-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid rgba($color-white, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.8s ease forwards;
+    flex-shrink: 0;
+
+    @include media-down(md) {
+      width: 150px;
+      height: 150px;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top; // Since it's top to hips
+    }
   }
 
   .page-title {
@@ -19,10 +51,14 @@
     margin-bottom: 15px;
     animation: fadeInUp 0.8s ease forwards;
 
-    @include media-down(md) { font-size: 42px; }
+    @include media-down(md) {
+      font-size: 42px;
+    }
   }
 
-  .separator { color: $color-e; }
+  .separator {
+    color: $color-e;
+  }
 }
 
 // ── ABOUT SECTION ────────────────────────────────────────────────────
@@ -52,7 +88,9 @@
     line-height: 1.2;
     margin-bottom: 20px;
 
-    @include media-down(md) { font-size: 32px; }
+    @include media-down(md) {
+      font-size: 32px;
+    }
   }
 
   .heading-line {
@@ -81,7 +119,7 @@
   .bio-image {
     width: 100%;
     margin-top: 40px;
-    
+
     img {
       width: 100%;
       height: auto;
@@ -171,7 +209,9 @@
     margin-bottom: 16px;
     line-height: 1.5;
 
-    &:last-child { margin-bottom: 0; }
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     .dot {
       width: 6px;
@@ -185,8 +225,128 @@
   }
 }
 
+// ── SOCIAL CONNECT GRID ───────────────────────────────────────────────
+.social-connect-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+  @include media-down(xs) {
+    grid-template-columns: 1fr;
+  }
+
+  .connect-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border: 1px solid rgba($color-a, 0.05);
+
+    .icon-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: $color-white;
+      color: $color-a;
+      box-shadow: 0 4px 10px rgba($color-a, 0.04);
+      transition: all 0.3s ease;
+
+      svg {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .label {
+      font-size: 14px;
+      font-weight: 600;
+      color: $color-a;
+      letter-spacing: 0.5px;
+    }
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba($color-a, 0.08);
+      background: $color-white;
+      border-color: rgba($color-e, 0.3);
+
+      .icon-wrap {
+        background: $color-e;
+        color: $color-white;
+        transform: rotate(10deg);
+      }
+
+      .label {
+        color: $color-e;
+      }
+    }
+
+    &.whatsapp {
+      border-color: #25D366;
+
+      .icon-wrap {
+        background: #25D366;
+      }
+
+      .label {
+        color: #25D366;
+      }
+    }
+
+    &.linkedin {
+      border-color: #0077b5;
+
+      .icon-wrap {
+        background: #0077b5;
+      }
+
+      .label {
+        color: #0077b5;
+      }
+    }
+
+    &.instagram {
+      border-color: #e4405f;
+
+      .icon-wrap {
+        background: #e4405f;
+      }
+
+      .label {
+        color: #e4405f;
+      }
+    }
+
+    &.behance {
+      border-color: #1769ff;
+
+      .icon-wrap {
+        background: #1769ff;
+      }
+
+      .label {
+        color: #1769ff;
+      }
+    }
+  }
+}
+
 // ── ANIMATION ─────────────────────────────────────────────────────────
 @keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
