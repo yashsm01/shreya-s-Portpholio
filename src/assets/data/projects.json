@@ -89,11 +89,14 @@
     "description_fr": "Ce projet explore le cadre géographique et environnemental de Pune (18°25'N - 18°37'N). S'étendant sur 243,84 km² avec une population dense de plus de 3,1 millions d'habitants, Pune fait face à des défis importants sur ses rives en raison de l'urbanisation rapide. L'étude se concentre sur le rajeunissement des écosystèmes des rivières Mula et Mutha, la lutte contre la pollution et la protection des habitats naturels comme les forêts et les zones humides pour restaurer l'écosystème urbain.",
     "shortDescription_en": "Ecological rejuvenation and riverfront protection in Pune.",
     "shortDescription_fr": "Rajeunissement écologique et protection des rives à Pune.",
-    "coverImage": "http://images.hinex.store/1775821591738-UP_P2_Main Header.png",
+    "coverImage": "http://images.hinex.store/1777565060821-Pune-01.png",
     "images": [
-      "http://images.hinex.store/1775821588973-UP_P_2_image_1.png",
-      "http://images.hinex.store/1775821589753-UP_P_2_image_2.png",
-      "http://images.hinex.store/1775821590591-UP_P_2_image_3.png"
+      "http://images.hinex.store/1777565060821-Pune-01.png",
+      "http://images.hinex.store/1777565061509-Pune-02.png",
+      "http://images.hinex.store/1777565062176-Pune-03.png",
+      "http://images.hinex.store/1777565062932-Pune-04.png",
+      "http://images.hinex.store/1777565063828-Pune-05.png",
+      "http://images.hinex.store/1777565065693-Pune-06.png"
     ],
     "location_en": "Pune, Maharashtra",
     "location_fr": "Pune, Maharashtra",
@@ -145,6 +148,34 @@
     ],
     "location_en": "Duqm, Oman",
     "location_fr": "Duqm, Oman",
+    "year": 2024,
+    "featured": true
+  },
+  {
+    "id": "urban-planning-project-5",
+    "title_en": "Inclusive Urban Transformation: Pandesara",
+    "title_fr": "Transformation Urbaine Inclusive : Pandesara",
+    "category": "urban",
+    "categoryLabel_en": "Urban Planning",
+    "categoryLabel_fr": "Urbanisme",
+    "description_en": "This project focuses on transforming Pandesara, Surat into an inclusive, resilient, and self-sustaining urban neighborhood. Driven by rapid migration and informal growth, the area faces infrastructure gaps, environmental stress, and lack of public spaces. Through spatial analysis, GIS mapping, and community engagement, the proposal identifies key challenges such as congested streets, informal housing, polluted water bodies, and limited services. The design strategy introduces a people-centric approach structured around mobility (Move), community life (Stay), and ecology (Breathe), aiming to improve connectivity, enhance green systems, and create inclusive public spaces while strengthening local economic opportunities.",
+    "description_fr": "Ce projet vise à transformer Pandesara, à Surat, en un quartier urbain inclusif, résilient et autosuffisant. En raison d'une urbanisation rapide et d'une croissance informelle, la zone souffre de lacunes en infrastructures, de stress environnemental et d'un manque d'espaces publics. Grâce à une analyse spatiale, une cartographie SIG et une participation communautaire, le projet identifie des défis majeurs tels que la congestion des rues, les logements informels, la pollution des cours d'eau et le manque de services. La stratégie de conception adopte une approche centrée sur l'humain autour de la mobilité (Move), de la vie communautaire (Stay) et de l'écologie (Breathe), afin d'améliorer la connectivité, renforcer les systèmes verts et créer des espaces publics inclusifs tout en soutenant les opportunités économiques locales.",
+    "shortDescription_en": "Inclusive urban redevelopment addressing migration, infrastructure, and ecology in Pandesara.",
+    "shortDescription_fr": "Réaménagement urbain inclusif face à la migration, aux infrastructures et à l'écologie à Pandesara.",
+    "coverImage": "http://images.hinex.store/1777565622445-2.png",
+    "images": [
+      "http://images.hinex.store/1777565621426-1.png",
+      "http://images.hinex.store/1777565622445-2.png",
+      "http://images.hinex.store/1777565623377-3.png",
+      "http://images.hinex.store/1777565624328-Pandesara-01.png",
+      "http://images.hinex.store/1777565625080-Pandesara-02.png",
+      "http://images.hinex.store/1777565625901-Pandesara-03.png",
+      "http://images.hinex.store/1777565626683-Pandesara-04.png",
+      "http://images.hinex.store/1777565627298-Pandesara-05.png",
+      "http://images.hinex.store/1777565627907-Pandesara-06.png"
+    ],
+    "location_en": "Pandesara, Surat, Gujarat",
+    "location_fr": "Pandesara, Surat, Gujarat",
     "year": 2024,
     "featured": true
   },
