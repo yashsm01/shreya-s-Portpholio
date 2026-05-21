@@ -16,12 +16,13 @@
         <a [routerLink]="['/projects']" routerLinkActive="active">{{ 'NAV.PORTFOLIO' | translate }}</a>
         <a [routerLink]="['/publications']" routerLinkActive="active">{{ 'NAV.PUBLICATIONS' | translate }}</a>
         <a [routerLink]="['/achievements']" routerLinkActive="active">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active">{{ 'NAV.CONTACT' | translate }}</a>
       </nav>
 
     <div class="nav-right">
       <div class="nav-actions">
         <button class="lang-toggle nav-lang-btn" (click)="toggleLanguage()">{{ currentLang === 'en' ? 'FR' : 'EN' }}</button>
-        <a href="#contact" class="btn btn-primary btn-cta desktop-menu">{{ 'NAV.CONTACT' | translate }}</a>
+        <a [routerLink]="['/contact']" class="btn btn-primary btn-cta desktop-menu">{{ 'NAV.CONTACT' | translate }}</a>
       </div>
 
       <!-- Mobile Menu Toggle -->
@@ -40,7 +41,7 @@
         <a [routerLink]="['/projects']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PORTFOLIO' | translate }}</a>
         <a [routerLink]="['/publications']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.PUBLICATIONS' | translate }}</a>
         <a [routerLink]="['/achievements']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.ACHIEVEMENTS' | translate }}</a>
-        <a [routerLink]="['/']" fragment="contact" class="btn btn-primary mt-4" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
+        <a [routerLink]="['/contact']" routerLinkActive="active" (click)="closeMenu()">{{ 'NAV.CONTACT' | translate }}</a>
       </nav>
   </div>
 </header>

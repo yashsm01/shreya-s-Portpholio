@@ -137,5 +137,15 @@
     "EDU_5_DEGREE": "Advanced Certificate – Geographic Information Systems (GIS)",
     "EDU_NOTE_1": "COA National Gold Medal (Thesis)",
     "EDU_NOTE_2": "University Medal"
+  },
+  "CONTACT_PAGE": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Let's work together — reach out through any platform below.",
+    "HEADING": "Get in Touch.",
+    "DESC_1": "Whether you're a municipality, developer, or design team I bring strategic thinking and design clarity to complex urban challenges.",
+    "DESC_2": "I'm currently based in British Columbia and open to new collaborations, projects, and professional conversations.",
+    "LOCATION_LABEL": "Based in",
+    "AVAILABLE": "Open to new opportunities",
+    "CONNECT_LABEL": "Connect With Me"
   }
 }

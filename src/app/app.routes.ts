@@ -6,6 +6,7 @@ import { PublicationsComponent } from './pages/publications/publications.compone
 import { AchievementsComponent } from './pages/achievements/achievements.component';
 import { AboutComponent } from './pages/about/about.component';
 import { ExperienceComponent } from './pages/experience/experience.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'projects/:id', component: ProjectDetailComponent },
   { path: 'publications', component: PublicationsComponent },
   { path: 'achievements', component: AchievementsComponent },
+  { path: 'contact', component: ContactComponent },
   { path: '**', redirectTo: '' }
 ];

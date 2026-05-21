@@ -1,0 +1,326 @@
+@import '../../../scss/variables';
+@import '../../../scss/mixins';
+
+// ── PAGE HEADER ──────────────────────────────────────────────────────
+.page-header {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background-color: $color-a;
+
+  @include media-down(md) {
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .page-title {
+    font-size: 64px;
+    font-weight: 700;
+    color: $color-white;
+    letter-spacing: -1px;
+    margin-bottom: 15px;
+    animation: fadeInUp 0.8s ease forwards;
+
+    @include media-down(lg) { font-size: 52px; }
+    @include media-down(md) { font-size: 38px; }
+    @include media-down(sm) { font-size: 32px; }
+  }
+
+  .separator {
+    color: $color-e;
+    margin-bottom: 20px;
+  }
+
+  .header-subtitle {
+    font-size: 16px;
+    color: rgba($color-white, 0.6);
+    font-family: $font-body;
+    font-weight: 400;
+    margin: 0;
+    letter-spacing: 0.5px;
+    animation: fadeInUp 0.9s ease forwards;
+  }
+}
+
+// ── CONTACT SECTION ──────────────────────────────────────────────────
+.contact-section {
+  padding: 100px 0 120px;
+  background-color: $color-b;
+
+  @include media-down(md) { padding: 60px 0 80px; }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+
+  @include media-down(lg) {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+// ── LEFT: INTRO ───────────────────────────────────────────────────────
+.contact-intro {
+  .intro-heading {
+    font-size: 42px;
+    font-weight: 700;
+    color: $color-a;
+    line-height: 1.2;
+    margin-bottom: 20px;
+
+    @include media-down(md) { font-size: 32px; }
+  }
+
+  .heading-line {
+    width: 60px;
+    height: 4px;
+    background-color: $color-e;
+    margin-bottom: 40px;
+
+    @include media-down(md) { margin-bottom: 30px; }
+  }
+
+  p {
+    font-size: 16px;
+    color: rgba($color-c, 0.85);
+    line-height: 1.8;
+    margin-bottom: 24px;
+  }
+
+  .lead {
+    font-size: 20px;
+    font-weight: 400;
+    color: $color-a;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    border-left: 2px solid rgba($color-e, 0.5);
+
+    @include media-down(md) {
+      font-size: 17px;
+      padding-left: 15px;
+    }
+  }
+}
+
+// Location block
+.location-block {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 40px;
+  padding: 20px 24px;
+  background: $color-white;
+  border-radius: 4px;
+  border-left: 3px solid $color-e;
+  box-shadow: 0 4px 20px rgba($color-a, 0.05);
+
+  .location-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba($color-e, 0.1);
+    border-radius: 50%;
+    color: $color-e;
+    flex-shrink: 0;
+  }
+
+  .location-label {
+    display: block;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: $color-e;
+    margin-bottom: 4px;
+  }
+
+  .location-value {
+    display: block;
+    font-size: 15px;
+    font-weight: 600;
+    color: $color-a;
+  }
+}
+
+// Availability badge
+.availability-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: rgba(#2e7d32, 0.08);
+  border: 1px solid rgba(#2e7d32, 0.2);
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2e7d32;
+  letter-spacing: 0.3px;
+
+  .dot-pulse {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4caf50;
+    position: relative;
+    flex-shrink: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: rgba(#4caf50, 0.3);
+      animation: pulse 1.8s ease-in-out infinite;
+    }
+  }
+}
+
+// ── RIGHT: CONTACT CARDS PANEL ────────────────────────────────────────
+.contact-cards-panel {
+  background: $color-white;
+  padding: 55px 50px;
+  border-radius: 4px;
+  border-top: 4px solid $color-e;
+  box-shadow: 0 10px 40px rgba($color-a, 0.05);
+
+  @include media-down(md) { padding: 40px 30px; }
+
+  .panel-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $color-e;
+    margin-bottom: 32px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba($color-a, 0.06);
+  }
+}
+
+// ── CONTACT CARD ──────────────────────────────────────────────────────
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px 22px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: 1px solid rgba($color-a, 0.07);
+  background: $color-b;
+  margin-bottom: 14px;
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  position: relative;
+  overflow: hidden;
+
+  &:last-child { margin-bottom: 0; }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: transparent;
+    transition: background 0.3s ease;
+  }
+
+  .card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: $color-white;
+    color: $color-a;
+    box-shadow: 0 4px 12px rgba($color-a, 0.08);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .card-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+    .card-platform {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: rgba($color-c, 0.5);
+    }
+
+    .card-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: $color-a;
+      transition: color 0.3s ease;
+    }
+  }
+
+  .card-arrow {
+    color: rgba($color-c, 0.25);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  &:hover {
+    background: $color-white;
+    box-shadow: 0 8px 30px rgba($color-a, 0.08);
+    transform: translateX(4px);
+
+    .card-arrow {
+      transform: translateX(2px) translateY(-2px);
+      color: $color-e;
+    }
+  }
+
+  // Platform-specific accent colours
+  &.whatsapp {
+    &::before { background: #25D366; }
+    &:hover .card-icon { background: #25D366; color: $color-white; }
+    &:hover .card-value { color: #25D366; }
+    &:hover::before { background: #25D366; }
+  }
+
+  &.linkedin {
+    &::before { background: #0077b5; }
+    &:hover .card-icon { background: #0077b5; color: $color-white; }
+    &:hover .card-value { color: #0077b5; }
+    &:hover::before { background: #0077b5; }
+  }
+
+  &.instagram {
+    &::before { background: #e4405f; }
+    &:hover .card-icon { background: #e4405f; color: $color-white; }
+    &:hover .card-value { color: #e4405f; }
+    &:hover::before { background: #e4405f; }
+  }
+
+  &.behance {
+    &::before { background: #1769ff; }
+    &:hover .card-icon { background: #1769ff; color: $color-white; }
+    &:hover .card-value { color: #1769ff; }
+    &:hover::before { background: #1769ff; }
+  }
+}
+
+// ── ANIMATIONS ────────────────────────────────────────────────────────
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); opacity: 0.6; }
+  50%       { transform: scale(1.8); opacity: 0; }
+}

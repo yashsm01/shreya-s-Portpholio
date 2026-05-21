@@ -15,21 +15,9 @@ export class ExperienceComponent {
 
   education = [
     {
-      period: '2013 – 2018',
-      degree: 'EXPERIENCE.EDU_1_DEGREE',
-      institution: 'SCET University, India',
-      notes: null
-    },
-    {
-      period: '2019 – 2021',
-      degree: 'EXPERIENCE.EDU_2_DEGREE',
-      institution: 'VNSGU University, India',
-      notes: ['EXPERIENCE.EDU_NOTE_1', 'EXPERIENCE.EDU_NOTE_2']
-    },
-    {
-      period: '2023 – 2024',
-      degree: 'EXPERIENCE.EDU_3_DEGREE',
-      institution: 'University of Maryland, USA',
+      period: '2025 – 2026',
+      degree: 'EXPERIENCE.EDU_5_DEGREE',
+      institution: 'BCIT, Canada',
       notes: null
     },
     {
@@ -39,9 +27,21 @@ export class ExperienceComponent {
       notes: null
     },
     {
-      period: '2025 – 2026',
-      degree: 'EXPERIENCE.EDU_5_DEGREE',
-      institution: 'BCIT, Canada',
+      period: '2023 – 2024',
+      degree: 'EXPERIENCE.EDU_3_DEGREE',
+      institution: 'University of Maryland, USA',
+      notes: null
+    },
+    {
+      period: '2019 – 2021',
+      degree: 'EXPERIENCE.EDU_2_DEGREE',
+      institution: 'VNSGU University, India',
+      notes: ['EXPERIENCE.EDU_NOTE_1', 'EXPERIENCE.EDU_NOTE_2']
+    },
+    {
+      period: '2013 – 2018',
+      degree: 'EXPERIENCE.EDU_1_DEGREE',
+      institution: 'SCET University, India',
       notes: null
     }
   ];

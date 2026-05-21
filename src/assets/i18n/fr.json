@@ -132,5 +132,15 @@
     "EDU_5_DEGREE": "Certificat Supérieur – Systèmes d'Information Géographique (SIG)",
     "EDU_NOTE_1": "Médaille d'Or Nationale du COA (Thèse)",
     "EDU_NOTE_2": "Médaille de l'Université"
+  },
+  "CONTACT_PAGE": {
+    "TITLE": "Contact",
+    "SUBTITLE": "Travaillons ensemble — contactez-moi via l'une des plateformes ci-dessous.",
+    "HEADING": "Prendre Contact.",
+    "DESC_1": "Que vous soyez une municipalité, un promoteur ou une équipe de conception — j'apporte une réflexion stratégique et une clarté de conception aux défis urbains complexes.",
+    "DESC_2": "Je suis actuellement basée en Colombie-Britannique et ouverte à de nouvelles collaborations, projets et conversations professionnelles.",
+    "LOCATION_LABEL": "Basée à",
+    "AVAILABLE": "Ouverte à de nouvelles opportunités",
+    "CONNECT_LABEL": "Me Contacter"
   }
 }
